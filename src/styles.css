@@ -1,1 +1,70 @@
 /* You can add global styles to this file, and also import other style files */
+/* html,
+body,
+.bigger,
+nav>ul>li>a,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  scroll-behavior: smooth;
+  font-family: "Open Sans";
+  line-height: 25px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  
+}
+
+.vc_custom_1467004829965 {
+    padding-top: 100px !important;
+}
+
+.vc_custom_1467004874241 {
+    padding-top: 100px !important;
+}
+
+.vc_custom_1470230403278 {
+    padding-top: 100px !important;
+    padding-right: 0px !important;
+    padding-bottom: 100px !important;
+    padding-left: 0px !important;
+}
+
+.ld_particles_5dbb7ed5b0a81 {
+    height: 100% !important;
+    position: absolute;
+}
+
+@media (min-width: 992px) {
+    .ld_particles_5dbb7ed5b0a81 {
+        top: 0px !important;
+        right: 0px !important;
+    }
+}
+
+.ld_button_5dbb7ed5b10cd.btn-icon-solid .btn-icon {
+    background: rgb(255, 225, 216);
+}
+
+.ld_button_5dbb7ed5b10cd.btn-icon-circle.btn-icon-ripple .btn-icon:before {
+    border-color: rgb(255, 225, 216);
+}
+
+.ld_button_5dbb7ed5b10cd .btn-split-bg {
+    background: rgb(255, 225, 216);
+}
+
+.ld_button_5dbb7ed5b10cd {
+    color: rgb(255, 164, 135);
+    font-size: 14px !important;
+    font-weight: 700 !important;
+}
+
+.ld_button_5dbb7ed5b10cd:hover {
+    color: rgb(255, 134, 96);
+}
+
+.wpb_animate_when_almost_visible {
+    opacity: 1;
+} */
