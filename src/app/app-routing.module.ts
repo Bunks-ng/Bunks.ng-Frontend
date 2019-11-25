@@ -14,7 +14,7 @@ children: [
   {path: '', component: LandingComponent},
   {path: 'spaces', component: ApartmentSpacesComponent},
   {path: 'space-details', component: ApartmentDetailsComponent},
-  {path: 'experience', component: ExperienceStartComponent}
+  {path: 'host-experience', component: ExperienceStartComponent}
 ]}
 ];
 

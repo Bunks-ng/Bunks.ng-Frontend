@@ -1,0 +1,11 @@
+.expp{
+    font-family: poppinsr;
+    color: #1d1c1c;
+    font-size: 16px;
+}
+
+@media(max-width: 747px){
+    #tain{
+        padding: 0;
+    }
+}
