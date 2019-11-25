@@ -34,324 +34,44 @@
     </div>
 
     <div class="vc_row wpb_row vc_row-fluid vc_custom_1454629463876">
-      <div class="container" style="margin: 0; padding: 0 3.5rem; width: 100%;">
-        <a [routerLink]="'/space-details'">
+      <div class="container cp" style="margin-bottom: 20px;">
+        <div *ngFor="let space of spaces">
           <div class="wpb_column vc_column_container vc_col-sm-3 card" style=" padding: 2rem 0;">
-            <div class=" vc_column-inner ">
+            <div class=" vc_column-inner p">
               <div class="wpb_wrapper">
                 <div class=" wpb_wrapper" style="width: inherit;">
-                  <img src="./assets/img/firstapa.jpg" class="card-img-top" alt="..." style="border-radius: 5px;">
-                  <div class="card-body">
-                    <p class="card-text und">private rooms in house. 8 guests</p>
-                    <h5 class="card-title undo">GreenHouse Cozy Mango Room</h5>
-                    <div class="uno">
-                      <div class="uno1">
-                        <div>
-                          <div class="uno11">
-                            <span class="spawn">
-                              <span class="uno111">
-                                <span class="uno1111"></span>
-                                #350k
+                  <div class="classic-slider flexslider" style="z-index: 4000">
+                    <ul class="slides">
+                      <li *ngFor="let images of space.image"><img src="./assets/img/{{images}}" alt="" /></li>
+                    </ul>
+                  </div>
+                  <a [routerLink]="'/space-details'">
+                    <div class="card-body">
+                      <p class="card-text und">private rooms in house<strong>.</strong> 8 guests</p>
+                      <h5 class="card-title undo">GreenHouse Cozy Mango Room</h5>
+                      <div class="uno">
+                        <div class="uno1">
+                          <div>
+                            <div class="uno11">
+                              <span class="spawn">
+                                <span class="uno111">
+                                  <span class="uno1111"></span>
+                                  #350k
+                                </span>
+                                / year
                               </span>
-                              / year
-                            </span>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-        </a>
-        <a href="apartment-details.html">
-          <div class="wpb_column vc_column_container vc_col-sm-3"
-            style="margin-bottom: 8px !important; padding: 2rem 0;">
-            <div class="vc_column-inner ">
-              <div class="wpb_wrapper">
-                <div class="card wpb_wrapper" style="width: inherit;">
-                  <img src="./assets/img/apa2.jpg" class="card-img-top" alt="..." style="border-radius: 5px;">
-                  <div class="card-body">
-                    <p class="card-text und">private rooms in house. 8 guests</p>
-                    <h5 class="card-title undo">GreenHouse Cozy Mango Room</h5>
-                    <div class="uno">
-                      <div class="uno1">
-                        <div>
-                          <div class="uno11">
-                            <span class="spawn">
-                              <span class="uno111">
-                                <span class="uno1111"></span>
-                                #350k
-                              </span>
-                              / year
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
+        </div>
 
-        <a href="apartment-details.html">
-          <div class="wpb_column vc_column_container vc_col-sm-3"
-            style="margin-bottom: 8px !important;padding: 2rem 0;">
-            <div class="vc_column-inner ">
-              <div class="wpb_wrapper">
-                <div class="card wpb_wrapper" style="width: inherit;">
-                  <img src="./assets/img/apa3.jpg" class="card-img-top" alt="..." style="border-radius: 5px;">
-                  <div class="card-body">
-                    <p class="card-text und">private rooms in house. 8 guests</p>
-                    <h5 class="card-title undo">GreenHouse Cozy Mango Room</h5>
-                    <div class="uno">
-                      <div class="uno1">
-                        <div>
-                          <div class="uno11">
-                            <span class="spawn">
-                              <span class="uno111">
-                                <span class="uno1111"></span>
-                                #350k
-                              </span>
-                              / year
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <div class="wpb_column vc_column_container vc_col-sm-3" style="margin-bottom: 8px !important;padding: 2rem 0;">
-          <div class="vc_column-inner ">
-            <div class="wpb_wrapper">
-              <div class="card wpb_wrapper" style="width: inherit;">
-                <img src="./assets/img/apa4.jpg" class="card-img-top" alt="..." style="border-radius: 5px;">
-                <div class="card-body">
-                  <p class="card-text und">private rooms in house. 8 guests</p>
-                  <h5 class="card-title undo">GreenHouse Cozy Mango Room</h5>
-                  <div class="uno">
-                    <div class="uno1">
-                      <div>
-                        <div class="uno11">
-                          <span class="spawn">
-                            <span class="uno111">
-                              <span class="uno1111"></span>
-                              #350k
-                            </span>
-                            / year
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="wpb_column vc_column_container vc_col-sm-3" style="margin-bottom: 8px !important;padding: 2rem 0;">
-          <div class="vc_column-inner ">
-            <div class="wpb_wrapper">
-              <div class="card wpb_wrapper" style="width: inherit;">
-                <img src="./assets/img/apa5.jpg" class="card-img-top" alt="..." style="border-radius: 5px;">
-                <div class="card-body">
-                  <p class="card-text und">private rooms in house. 8 guests</p>
-                  <h5 class="card-title undo">GreenHouse Cozy Mango Room</h5>
-                  <div class="uno">
-                    <div class="uno1">
-                      <div>
-                        <div class="uno11">
-                          <span class="spawn">
-                            <span class="uno111">
-                              <span class="uno1111"></span>
-                              #350k
-                            </span>
-                            / year
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="wpb_column vc_column_container vc_col-sm-3" style="margin-bottom: 8px !important;padding: 2rem 0;">
-          <div class="vc_column-inner ">
-            <div class="wpb_wrapper">
-              <div class="card wpb_wrapper" style="width: inherit;">
-                <img src="./assets/img/firstapa.jpg" class="card-img-top" alt="..." style="border-radius: 5px;">
-                <div class="card-body">
-                  <p class="card-text und">private rooms in house. 8 guests</p>
-                  <h5 class="card-title undo">GreenHouse Cozy Mango Room</h5>
-                  <div class="uno">
-                    <div class="uno1">
-                      <div>
-                        <div class="uno11">
-                          <span class="spawn">
-                            <span class="uno111">
-                              <span class="uno1111"></span>
-                              #350k
-                            </span>
-                            / year
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="wpb_column vc_column_container vc_col-sm-3" style="margin-bottom: 8px !important;padding: 2rem 0;">
-          <div class="vc_column-inner ">
-            <div class="wpb_wrapper">
-              <div class="card wpb_wrapper" style="width: inherit;">
-                <img src="./assets/img/firstapa.jpg" class="card-img-top" alt="..." style="border-radius: 5px;">
-                <div class="card-body">
-                  <p class="card-text und">private rooms in house. 8 guests</p>
-                  <h5 class="card-title undo">GreenHouse Cozy Mango Room</h5>
-                  <div class="uno">
-                    <div class="uno1">
-                      <div>
-                        <div class="uno11">
-                          <span class="spawn">
-                            <span class="uno111">
-                              <span class="uno1111"></span>
-                              #350k
-                            </span>
-                            / year
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="wpb_column vc_column_container vc_col-sm-3" style="margin-bottom: 8px !important; padding: 2rem 0;">
-          <div class="vc_column-inner ">
-            <div class="wpb_wrapper">
-              <div class="card wpb_wrapper" style="width: inherit;">
-                <img src="./assets/img/firstapa.jpg" class="card-img-top" alt="..." style="border-radius: 5px;">
-                <div class="card-body">
-                  <p class="card-text und">private rooms in house. 8 guests</p>
-                  <h5 class="card-title undo">GreenHouse Cozy Mango Room</h5>
-                  <div class="uno">
-                    <div class="uno1">
-                      <div>
-                        <div class="uno11">
-                          <span class="spawn">
-                            <span class="uno111">
-                              <span class="uno1111"></span>
-                              #350k
-                            </span>
-                            / year
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="wpb_column vc_column_container vc_col-sm-3" style="margin-bottom: 8px !important; padding: 2rem 0;">
-          <div class="vc_column-inner ">
-            <div class="wpb_wrapper">
-              <div class="card wpb_wrapper" style="width: inherit;">
-                <img src="./assets/img/firstapa.jpg" class="card-img-top" alt="..." style="border-radius: 5px;">
-                <div class="card-body">
-                  <p class="card-text und">private rooms in house. 8 guests</p>
-                  <h5 class="card-title undo">GreenHouse Cozy Mango Room</h5>
-                  <div class="uno">
-                    <div class="uno1">
-                      <div>
-                        <div class="uno11">
-                          <span class="spawn">
-                            <span class="uno111">
-                              <span class="uno1111"></span>
-                              #350k
-                            </span>
-                            / year
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="wpb_column vc_column_container vc_col-sm-3" style="margin-bottom: 8px !important; padding: 2rem 0;">
-          <div class="vc_column-inner ">
-            <div class="wpb_wrapper">
-              <div class="card wpb_wrapper" style="width: inherit;">
-                <img src="./assets/img/firstapa.jpg" class="card-img-top" alt="..." style="border-radius: 5px;">
-                <div class="card-body">
-                  <p class="card-text und">private rooms in house. 8 guests</p>
-                  <h5 class="card-title undo">GreenHouse Cozy Mango Room</h5>
-                  <div class="uno">
-                    <div class="uno1">
-                      <div>
-                        <div class="uno11">
-                          <span class="spawn">
-                            <span class="uno111">
-                              <span class="uno1111"></span>
-                              #350k
-                            </span>
-                            / year
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="wpb_column vc_column_container vc_col-sm-3" style="margin-bottom: 8px !important;">
-          <div class="vc_column-inner ">
-            <div class="wpb_wrapper">
-              <div class="card wpb_wrapper" style="width: inherit;">
-                <img src="./assets/img/firstapa.jpg" class="card-img-top" alt="..." style="border-radius: 5px;">
-                <div class="card-body">
-                  <p class="card-text und">private rooms in house. 8 guests</p>
-                  <h5 class="card-title undo">GreenHouse Cozy Mango Room</h5>
-                  <div class="uno">
-                    <div class="uno1">
-                      <div>
-                        <div class="uno11">
-                          <span class="spawn">
-                            <span class="uno111">
-                              <span class="uno1111"></span>
-                              #350k
-                            </span>
-                            / year
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 

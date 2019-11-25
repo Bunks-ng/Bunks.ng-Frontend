@@ -1,0 +1,20 @@
+@media(max-width: 965px){
+    .j{
+        display: none !important;
+    }
+}
+
+@media(max-width: 1024px){
+    .rtext{
+        font-size: 22px;
+    }
+    .j{
+        display: none !important;
+    }
+}
+
+@media(max-width: 753px){
+    .rtext{
+        font-size: 24px;
+    }
+}

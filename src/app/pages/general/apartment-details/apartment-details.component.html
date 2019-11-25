@@ -1,99 +1,56 @@
 <div id="main">
   <div id="main-content" class="hidden">
     <!-- Container -->
-    <div class="portfolio">
-      <!-- Portfolio Filters -->
-      <ul id="filters" class="">
-        <li><a id="all" href="#" data-filter="*" class="active">All</a></li>
-        <li><a href="#" data-filter=".graphics">Graphics</a></li>
-        <li><a href="#" data-filter=".photo">Photo</a></li>
-        <li><a href="#" data-filter=".video">Video</a></li>
-        <li><a href="#" data-filter=".web">Web</a></li>
-      </ul>
-      <!--/Portfolio Filters -->
-      <!-- Portfolio -->
-      <div id="portfolio-wrap" class="">
-        <div id="portfolio" class="mfp-gallery row" data-col="3">
-
-          <div class="col-md-4">
-            <div class="item web light-content wide">
-              <a class="mf-zoom" href="./assets/img/apa4.jpg">
-                <div class="item-content" style="background-image:url(./assets/img/apa4.jpg)"></div>
-                <div class="item-overlay">
-                  <div class="outer">
-                    <div class="inner">
-                      <div class="zoom-box">
-                        <!-- <div class="zoom-in-left"></div>
-                        <div class="zoom-in-right"></div> -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="row">
-              <div class="item graphics dark-content">
-                <a class="mf-zoom" href="./assets/img/apa2.jpg">
-
-
-                  <div class="item-content" style="background-image:url(./assets/img/apa2.jpg); z-index: 10 !important">
-                    <div class="overlay"
-                      style=" display: flex; justify-content: space-between; flex-direction: column; align-items: flex-end; width: inherit !important; padding: 40px">
-
-                      <button (click)="fe()" id="cb"
-                        style="width: 100px; padding: 15px; z-index: 1000 !important;"><strong>View more
-                          photos</strong></button>
-                      <div class="clapat-button"
-                        style="width: 100px; padding: 18px 0px; z-index: 1000 !important; background: #fff !important; color: rgb(51, 51, 51)">
-                        <strong>Save</strong>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-overlay">
-                    <div class="outer">
-
-                      <div class="inner">
-                        <div class="zoom-box">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="item photo dark-content">
-                <a class="mf-zoom" href="./assets/img/apa5.jpg">
-                  <div class="item-content" style="background-image:url(./assets/img/apa5.jpg)"></div>
-                  <div class="item-overlay">
-                    <div class="outer">
-                      <div class="inner">
-                        <div class="zoom-box">
-                          <!-- <div class="zoom-in-left"></div>
-                          <div class="zoom-in-right"></div> -->
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
+    <div class="vc_row wpb_row vc_row-fluid vc_custom_1467336115996 vc_row-has-fill not-mobile"
+      style="margin-bottom: 10px;">
+      <div class="container" style="padding: 0 !important;">
+        <div class="wpb_column vc_column_container vc_col-sm-6" style="padding: 0 !important;">
+          <div class="vc_column-inner" style="padding: 0 !important;">
+            <div class="wpb_wrapper">
+              <div style="border: 3px solid rgb(72,72,72);">
+                <img src="./assets/img/white-concrete-high-rise-building-2119714-min.jpg" alt="" />
               </div>
             </div>
           </div>
-
+        </div>
+        <div class="wpb_column vc_column_container vc_col-sm-3" style="padding: 0 !important;">
+          <div class="vc_column-inner" style="padding: 0 !important; display: flex; flex-direction: column;">
+            <div class="wpb_wrapper">
+              <div style="border: 3px solid rgb(72,72,72); border-left: 0; border-top: 0;">
+                <img src="./assets/img/apa2.jpg" alt="" />
+              </div>
+            </div>
+            <div class="wpb_wrapper">
+              <div style="border: 3px solid rgb(72,72,72); border-left: 0; border-top: 0">
+                <img src="./assets/img/apartment-bathroom-bathtub-2134224.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wpb_column vc_column_container vc_col-sm-3" style="padding: 0 !important; border-top: 0">
+          <div class="vc_column-inner" style="padding: 0 !important; display: flex; flex-direction: column;">
+            <div class="wpb_wrapper">
+              <div style="border: 3px solid rgb(72,72,72); border-left: 0; border-top: 0">
+                <img src="./assets/img/apa2.jpg" alt="" />
+              </div>
+            </div>
+            <div class="wpb_wrapper">
+              <div style="border: 3px solid rgb(72,72,72); border-left: 0; border-top: 0;">
+                <img src="./assets/img/apa2.jpg" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
 
-      <!--/Portfolio -->
-    </div><br>
+    <br>
     <div class="vc_row wpb_row vc_row-fluid vc_custom_1467336115996 vc_row-has-fill" id="display-mobile">
       <div class="container" style="padding: 0 !important;">
         <div class="wpb_column vc_column_container vc_col-sm-12" style="padding: 0 !important;">
           <div class="vc_column-inner" style="padding: 0 !important;">
             <div class="wpb_wrapper">
-              <div class="classic-slider flexslider">
+              <div class="classic-slider flexslider" style="z-index: 4000">
                 <ul class="slides">
                   <li><img src="./assets/img/apa2.jpg" alt="" /></li>
                   <li><img src="./assets/img/apa3.jpg" alt="" /></li>
@@ -206,7 +163,7 @@
     </div>
     <div class="vc_row wpb_row vc_row-fluid vc_custom_1467004829965" id="vtop">
       <div class="container">
-        <div class="wpb_column vc_column_container vc_col-sm-7" id="aps">
+        <div class="wpb_column vc_column_container vc_col-sm-7 sd">
           <div class="vc_column-inner" style="display: flex !important; flex-direction: column !important;">
             <div class="wpb_wrapper">
               <h3 class="title-has-line space-title" id="space-titlee">Amazing view - Moderne apartment</h3>
@@ -237,34 +194,35 @@
             </div>
 
             <div class="wpb_wrapper" style="margin-top: 27px">
-              <div class="vc_row wpb_row vc_row-fluid vc_custom_1467004829965" style="margin-top: -9px;">
-                <div class="container" style="padding: 0; display: flex; flex-direction: column;">
-                  <div style="display: flex; flex-direction: row;">
-                    <div style="flex-grow: 1">icon</div>
-                    <div style="flex-grow: 3; display: flex; flex-direction: column;">
-                      <span class="_1p3joamp">Entire home</span>
-                      <span style="font-family: poppinsr; font-size: 14px; margin-left: 4px;">You'll have the home to
-                        yourselves</span>
-                    </div>
+              <div class="container" style="padding: 0; display: flex; flex-direction: column;">
+                <div class="gundam">
+                  <div class="gundam-item1"><i class="fa fa-home"></i></div>
+                  <div class="gundam-item2">
+                    <span class="_1p3joamp">Entire home</span>
+                    <span style="font-family: poppinsr; font-size: 14px; margin-left: 4px;">You'll have the home to
+                      yourselves</span>
                   </div>
-                  <div style="display: flex; flex-direction: row; margin-top: 15px;">
-                    <div style="flex-grow: 1">icon</div>
-                    <div style="flex-grow: 3; display: flex; flex-direction: column;">
-                      <span class="_1p3joamp">Self check-in</span>
-                      <span style="font-family: poppinsr; font-size: 14px; margin-left: 4px;">Check yourself in with the
-                        lockbox.</span>
-                    </div>
+                </div>
+                <div class="gundam" style="margin-top: 15px;">
+                  <div class="gundam-item1"><i class="fa fa-bell"></i></div>
+                  <div class="gundam-item2">
+                    <span class="_1p3joamp">Self check-in</span>
+                    <span style="font-family: poppinsr; font-size: 14px; margin-left: 4px;">Check yourself in with
+                      the
+                      lockbox.</span>
                   </div>
-                  <div style="display: flex; flex-direction: row; margin-top: 15px;">
-                    <div style="flex-grow: 1">icon</div>
-                    <div style="flex-grow: 3; display: flex; flex-direction: column;">
-                      <span class="_1p3joamp">Great location</span>
-                      <span style="font-family: poppinsr; font-size: 14px; margin-left: 4px;">Check yourself in with the
-                        lockbox.</span>
-                    </div>
+                </div>
+                <div class="gundam" style="margin-top: 15px;">
+                  <div class="gundam-item1"><i class="fa fa-map-marker"></i></div>
+                  <div class="gundam-item2">
+                    <span class="_1p3joamp">Great location</span>
+                    <span style="font-family: poppinsr; font-size: 14px; margin-left: 4px;">Check yourself in with
+                      the
+                      lockbox.</span>
                   </div>
                 </div>
               </div>
+              <!-- </div> -->
             </div>
 
             <div class="wpb_wrapper" style="margin-top: 15px;">
@@ -291,11 +249,12 @@
           <div class="vc_column-inner" style="padding: 0;display: flex; flex-direction: column;">
             <div class="wpb_wrapper">
               <span style="color: #000;">
-                The Off-grid itHouse brings together raw industrial aesthetics with the tactics of green design to forge
+                The Off-grid itHouse brings together raw industrial aesthetics with the tactics of green design to
+                forge
                 a new home in the sunbaked wilds of the California high desert.
               </span>
             </div>
-            <div class="wpb_wrapper">
+            <div class="wpb_wrapper ammenities">
               <div class="vc_row wpb_row vc_row-fluid vc_custom_1467004829965" style="margin-top: -9px;">
                 <div class="container" style="padding: 0;">
                   <hr style="background: #EBEBEB;
@@ -303,38 +262,39 @@
                 </div>
               </div>
             </div>
-            <div class="wpb_wrapper">
-              <div class="vc_row wpb_row vc_row-fluid vc_custom_1467004829965" style="margin-top: 19px;">
-                <div class="container" style="padding: 0;
-                display: flex;
-                flex-direction: column;
-                width: 80%;
-                justify-self: right;
-                float: left;">
-                  <div style="font-size: 18px;
-                  color: #000;
-                  font-weight: 590;
-                  margin-bottom: 10px;">Ammenities</div>
-                  <div style="display: flex; flex-direction: row; justify-content: space-between">
-                    <div style="width: 200px;">
-                      <span>icon Essentials</span>
-                      
-                    </div>
-                    <div style="width: 200px">
-                      <span>icon wi-Fi</span>
-                      
-                    </div>
+
+            <div class="wpb_wrapper ammenities">
+              <div class="container ammenities-list">
+                <div class="ammenities-title">Ammenities</div>
+                <div style="display: flex; flex-direction: row; justify-content: space-between">
+                  <div style="width: 200px;">
+                    <span>Parking lot</span>
+
                   </div>
-                  <div style="display: flex; flex-direction: row; justify-content: space-between; margin-top: 15px;">
-                    <div style="width: 200px">
-                      <span>icon Laundry</span>
-                    </div>
-                    <div style="width: 200px">
-                      <span>icon Heating</span>
-                    </div>
+                  <div style="width: 200px">
+                    <span>Unlimited wi-Fi</span>
+
+                  </div>
+                </div>
+                <div style="display: flex; flex-direction: row; justify-content: space-between; margin-top: 15px;">
+                  <div style="width: 200px">
+                    <span>Equipped kitchen</span>
+                  </div>
+                  <div style="width: 200px">
+                    <span>Laundery</span>
+                  </div>
+                </div>
+                <div style="display: flex; flex-direction: row; justify-content: space-between; margin-top: 15px;">
+                  <div style="width: 200px">
+                    <span>Carbon monoxide detector</span>
+                  </div>
+                  <div style="width: 200px">
+                    <span>Lockbox</span>
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="wpb_wrapper ammenities" style="height: 80px; opacity: 0;">
             </div>
           </div>
         </div>

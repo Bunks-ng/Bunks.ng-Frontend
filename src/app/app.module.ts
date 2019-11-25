@@ -11,6 +11,7 @@ import { FooterComponent } from './components/layout/footer/footer.component';
 import { ApartmentSpacesComponent } from './pages/general/apartment-spaces/apartment-spaces.component';
 import { ApartmentCardsComponent } from './pages/general/apartment-cards/apartment-cards.component';
 import { ApartmentDetailsComponent } from './pages/general/apartment-details/apartment-details.component';
+import { ExperienceStartComponent } from './pages/general/experience-start/experience-start.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ApartmentDetailsComponent } from './pages/general/apartment-details/apa
     FooterComponent,
     ApartmentSpacesComponent,
     ApartmentCardsComponent,
-    ApartmentDetailsComponent
+    ApartmentDetailsComponent,
+    ExperienceStartComponent
   ],
   imports: [
     BrowserModule,

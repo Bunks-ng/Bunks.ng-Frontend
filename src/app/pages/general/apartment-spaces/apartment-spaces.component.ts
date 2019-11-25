@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {AppService} from '../../../services/app.service';
+import { AppService } from '../../../services/app.service';
+import { scrollTop } from '../../../utils/scroll-to-top'
 
 @Component({
   selector: 'app-apartment-spaces',
@@ -7,10 +8,77 @@ import {AppService} from '../../../services/app.service';
   styleUrls: ['./apartment-spaces.component.css']
 })
 export class ApartmentSpacesComponent implements OnInit {
-
+  // private appService: AppService
   constructor(
     private appService: AppService
   ) { }
+
+  spaces = [
+    {
+      image: [
+        'firstapa.jpg',
+        'apa2.jpg'
+      ],
+      text: 'Hostels',
+      searchQuery: 'shared-apartments'
+    },
+    {
+      image: [
+        'apa3.jpg',
+        'apa2.jpg'
+      ],
+      text: 'Shared Apartments',
+      searchQuery: 'shared-apartments'
+    },
+    {
+      image: [
+        'apa4.jpg',
+        'apa2.jpg'
+      ],
+      text: 'Shared Apartments',
+      searchQuery: 'shared-apartments'
+    },
+    {
+      image: [
+        'apa5.jpg',
+        'apa2.jpg'
+      ],
+      text: 'Shared Apartments',
+      searchQuery: 'shared-apartments'
+    },
+    {
+      image: [
+        'firstapa.jpg',
+        'apa2.jpg'
+      ],
+      text: 'Shared Apartments',
+      searchQuery: 'shared-apartments'
+    },
+    {
+      image: [
+        'firstapa.jpg',
+        'apa2.jpg'
+      ],
+      text: 'Shared Apartments',
+      searchQuery: 'shared-apartments'
+    },
+    {
+      image: [
+        'firstapa.jpg',
+        'apa2.jpg'
+      ],
+      text: 'Shared Apartments',
+      searchQuery: 'shared-apartments'
+    },
+    {
+      image: [
+        'firstapa.jpg',
+        'apa2.jpg'
+      ],
+      text: 'Shared Apartments',
+      searchQuery: 'shared-apartments'
+    }
+  ];
 
   scripts = [
     './assets/js/jquery/jquery.js',
@@ -24,6 +92,7 @@ export class ApartmentSpacesComponent implements OnInit {
 
   ngOnInit() {
     this.appService.loadScriptPage(this.scripts);
+    scrollTop();
   }
 
 }

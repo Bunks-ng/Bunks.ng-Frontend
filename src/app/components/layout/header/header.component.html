@@ -4,7 +4,7 @@
     <div id="header-container">
       <!-- Logo -->
       <div id="logo">
-        <a class="animation-link" href="index.html">
+        <a class="animation-link" [routerLink]="'/'">
           <img src="./assets/img/Group 19.png" alt="Logo" />
         </a>
       </div>
@@ -30,11 +30,11 @@
           <ul id="menu-main-menu" class="main-menu">
 
             <li id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84">
-              <a href="Experience/index.html" class="animation-link menu-link">Host an activity</a>
+              <a [routerLink]="'/experience'" class="animation-link menu-link">Host an activity</a>
             </li><br>
-            <li id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84">
+            <!-- <li id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84">
               <a href="index2.html" class="animation-link menu-link">View all listings</a>
-            </li>
+            </li> -->
 
           </ul>
         </nav>

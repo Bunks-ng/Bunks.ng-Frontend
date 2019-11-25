@@ -1,0 +1,61 @@
+.sub-pic {
+  flex-grow: 1;
+}
+
+.ammenities {
+  margin-top: 18px;
+}   
+
+.gundam {
+  display: flex;
+  flex-direction: row;
+}
+
+.gundam-item1 {
+  flex-grow: 1
+}
+
+.gundam-item2 {
+  flex-grow: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.ammenities-list {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-self: right;
+  float: left;
+}
+
+
+.ammenities-title {
+  font-size: 18px;
+  color: #000;
+  font-weight: 590;
+  margin-bottom: 10px;
+}
+
+@media(max-width: 1026px) {
+  .gundam-item2 {
+    flex-grow: 9;
+  }
+
+  .ammenities-list {
+    width: 100%;
+  }
+
+  .ammenities {
+    margin-top: 18px;
+  }
+
+
+}
+
+@media(max-width: 613px) {
+  .gundam-item2 {
+    flex-grow: 3;
+  }
+}

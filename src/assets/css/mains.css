@@ -345,8 +345,6 @@
 	  display: flex;
 	  width: 100%;
 	  padding: 90px 0;
-	  /* height: 50vh; */
-	  /* background: red; */
 	}
 
 	.hp {
@@ -362,9 +360,7 @@
 	  border-radius: 7px;
 	}
 
-	.parents {
-	  /* background: red; */
-	}
+	.parents {}
 
 	.parents:hover .student,
 	.parents:focus .student {
@@ -441,7 +437,7 @@
 	  display: flex;
 	  width: 100%;
 	  flex-direction: column;
-	  height: 200px;
+	  height: 160px;
 	  margin: auto;
 	  border-radius: 10px;
 	}
@@ -888,9 +884,9 @@
 	#thre {
 	  display: flex;
 	  margin-right: auto;
+	  flex-direction: column;
+	  justify-content: space-evenly;
 	}
-
-	.thr {}
 
 	.mai {
 	  width: 14rem;
@@ -1179,8 +1175,8 @@
 	h4,
 	h5,
 	h6 {
-	  font-weight: 700;
-	  font-family: 'Montserrat', sans-serif;
+	  font-weight: 600 !important;
+	  font-family: poppinsr !important;
 	  color: #000;
 	  margin-bottom: 10px;
 	}
@@ -1577,8 +1573,8 @@
 	  -webkit-box-orient: vertical !important;
 	  color: rgb(72, 72, 72) !important;
 	  font-size: 11px !important;
-	  margin-bottom: 6px !important;
-	  margin-top: 0.3rem !important;
+	  margin-bottom: 1px !important;
+	  margin-top: 0.4rem !important;
 	  animation-duration: 350ms !important;
 	  animation-name: keyframe_18jn58a !important;
 	  animation-timing-function: ease-in-out !important;
@@ -1589,10 +1585,10 @@
 
 	.undo {
 	  color: rgb(34, 34, 34) !important;
-	  /* font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important; */
-	  font-weight: 400 !important;
+	  font-family: sans-serif !important;
+	  font-weight: 350 !important;
 	  margin-top: 2px !important;
-	  font-size: 18px !important;
+	  font-size: 16px !important;
 	  line-height: 24px !important;
 	  max-height: 48px !important;
 	  text-overflow: ellipsis !important;
@@ -1600,23 +1596,16 @@
 	  -webkit-line-clamp: 2 !important;
 	  -webkit-box-orient: vertical !important;
 	  overflow: hidden !important;
-	  font-family: poppinsr;
 	}
 
 	.u {
-	  /* color: rgb(34, 34, 34) !important; */
-	  /* font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important; */
-	  /* font-weight: 500 !important; */
 	  margin-top: 2px !important;
 	  font-size: 15px !important;
 
 
 	  font-weight: 600 !important;
 	  line-height: 1.28571em !important;
-	  color:
-	    rgb(72, 72, 72) !important;
-
-	  /* line-height: 24px !important; */
+	  color: rgb(72, 72, 72) !important;
 	  max-height: 48px !important;
 	  text-overflow: ellipsis !important;
 	  display: -webkit-box !important;
@@ -1643,15 +1632,11 @@
 	  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15) !important;
 	  border-bottom-left-radius: 12px !important;
 	  border-bottom-right-radius: 12px !important;
-	  /* border-bottom: .0625rem solid #e3e3e3;
-		border-bottom-left-radius: .25rem;
-		border-bottom-right-radius: .25rem;
-		border-left: .0625rem solid #e3e3e3;
-		border-right: .0625rem solid #e3e3e3; */
 	}
 
 	.uno {
 	  webkit-box-pack: justify !important;
+	  margin-top: -11px !important;
 	  -webkit-box-align: end !important;
 	  align-items: flex-end !important;
 	  display: flex !important;
@@ -1703,7 +1688,6 @@
 	  background-size: 9px 9px !important;
 	  height: 10px !important;
 	  transform: translateX(-0.5px) !important;
-	  /* background-image: url(data:image/svg+xml,%3Csvg viewBox='0 0 1000 1000' xmlns='http://www.w3.org/…3 28-39 52-39 25 0 47 17 54 41l87 277h280c24 0 45 16 53 40z'/%3E%3C/svg%3E) !important; */
 	  background-repeat: space no-repeat !important;
 	}
 
@@ -2292,20 +2276,6 @@
 	  margin: 0px !important;
 	}
 
-
-
-
-
-	/* ._91slf2a {
-		top: 0px !important;
-		bottom: 0px !important;
-		left: 0px !important;
-		right: 0px !important;
-		height: 0px !important;
-		width: 0px !important;
-		position: absolute !important;
-	} */
-
 	._10xjrv2u {
 	  display: none !important;
 	  background-image: none !important;
@@ -2836,6 +2806,7 @@
 	/* zoom-in animation */
 	html {
 	  -webkit-backface-visibility: hidden;
+	  scroll-behavior: smooth;
 	}
 
 	.mfp-ready .mfp-figure {
@@ -3580,11 +3551,10 @@
 	}
 
 	.hero-image {
-	  width: 100%;
+	  width: 65%;
 	  height: inherit;
 	  margin: 0;
 	  padding: 0;
-	  position: absolute;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -3596,6 +3566,8 @@
 	.hero-image>.clapat-caption {
 	  opacity: 1;
 	}
+
+	
 
 	.overlay {
 	  height: 100%;
@@ -3690,7 +3662,6 @@
 	}
 
 	.hero-scroll-icons.no-line .icon-scroll-line {
-	  /*display: none;*/
 	}
 
 	video#bgvid {
@@ -8775,31 +8746,33 @@
 	  float: right;
 	}
 
-	
+
 
 	@media only screen and (max-width: 1026px) {
-	  .portfolio {
-		display: none !important;
+	  .not-mobile {
+	    display: none !important;
 	  }
 
-	  #space-titlee{
-		font-size: 30px !important;
-		font-weight: 750 !important;
+	  #space-titlee {
+	    font-size: 27px !important;
+	    font-weight: 750 !important;
 	  }
 
-	  #aps{
-		  width: 100%;
-	  }
-
-	  #res-spot{
-		  display: none !important;
+	  #aps {
+	    width: 100%;
 	  }
 
 	  #vtop{
-		  margin-top: -50px !important;
+		  margin-top: -40px;
 	  }
 
+	  .sd{
+		  width: 100% !important;
+	  }
 
+	  #res-spot {
+		display: none !important;
+	  }
 
 	  #display-mobile {
 	    display: block;
@@ -9074,7 +9047,7 @@
 	  }
 
 	  #hero.hero-small {
-	    height: 60%;
+	    height: 65%;
 	  }
 
 	  #hero.hero-large {
@@ -9201,15 +9174,20 @@
 
 	@media only screen and (max-width: 794px) {
 	  #one {
-	    /*display: none;*/
+	    display: none;
 	  }
 
 	  #two {
-	    /*display: none;*/
+	    display: none;
+	  }
+
+	  #thre {
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: space-evenly;
 	  }
 
 	  #th {
-	    /* background: #528DA9; */
 	    background: #fff;
 	    margin-top: 25px;
 	    border-top: 1px solid black !important
@@ -9225,7 +9203,6 @@
 	    border-top: 1px solid rgb(227, 225, 225) !important
 	  }
 
-	  #thre {}
 
 	  #thr {
 	    height: 100%;
@@ -9533,7 +9510,7 @@
 	  }
 
 	  #logo img {
-	    margin-left: 10px;
+	    margin-left: 1px;
 	  }
 
 	  #header-title-div {

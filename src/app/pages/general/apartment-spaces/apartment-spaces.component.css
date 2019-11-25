@@ -1,0 +1,33 @@
+@media(max-width: 765px) {
+  .p {
+    padding: 0 !important;
+  }
+
+  .cp{
+      padding: 0 30px !important;
+  }
+}
+
+@media(max-width: 478px){
+    #main{
+        margin-top: 70px;
+    }
+    .topo {
+        padding-bottom: 10px;
+        background-color: #ffffff;
+        position: sticky;
+        height: 160px;
+        top: 100px;
+        width: 100%;
+        z-index: 200;
+    }
+    .topoo{
+        width: 90%;
+    }
+}
+
+.cp {
+  margin: 0;
+  padding: 0 3.5rem;
+  width: 100%;
+}
