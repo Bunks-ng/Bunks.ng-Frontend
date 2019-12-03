@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AppService } from '../../../services/app.service';
-import { scrollTop } from '../../../utils/scroll-to-top'
+import { scrollTop } from '../../../utils/scroll-to-top' 
 
 @Component({
   selector: 'app-apartment-spaces',
@@ -8,7 +8,7 @@ import { scrollTop } from '../../../utils/scroll-to-top'
   styleUrls: ['./apartment-spaces.component.css']
 })
 export class ApartmentSpacesComponent implements OnInit {
-  // private appService: AppService
+
   constructor(
     private appService: AppService
   ) { }

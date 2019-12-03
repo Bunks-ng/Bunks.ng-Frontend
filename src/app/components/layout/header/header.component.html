@@ -4,7 +4,7 @@
     <div id="header-container">
       <!-- Logo -->
       <div id="logo">
-        <a class="animation-link" [routerLink]="'/'">
+        <a [routerLink]="'/'">
           <img src="./assets/img/Group 19.png" alt="Logo" />
         </a>
       </div>
@@ -12,6 +12,7 @@
       <div id="header-title-div" style="">
         <div id="header-title" style="">BUNKERS Menu</div>
       </div>
+      <div routerLink = "/auth/login" class="hamburger-user" style="background: url('./assets/img/user-4.jpg')"></div>
       <!-- Menu Button -->
       <button class="hamburger hamburger-rotate hidden">
         <span>toggle menu</span>
@@ -30,11 +31,8 @@
           <ul id="menu-main-menu" class="main-menu">
 
             <li id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84">
-              <a [routerLink]="'/host-experience'" class="animation-link menu-link">Host an activity</a>
+              <a [routerLink]="'/host-experience'" class=" menu-link">Host an activity</a>
             </li><br>
-            <!-- <li id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84">
-              <a href="index2.html" class="animation-link menu-link">View all listings</a>
-            </li> -->
 
           </ul>
         </nav>

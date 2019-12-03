@@ -47,13 +47,13 @@ jQuery(function ($) {
 
     setTimeout(function () {
       $("header, .hamburger, footer, #sidebar").removeClass("hidden");
-    }, 500);
+    }, 50);
 
     $('#hero').waitForImages({
       finished: function () {
         setTimeout(function () {
           $("#hero").removeClass("hidden");
-        }, 1000);
+        }, 10);
       },
       waitForAll: true
     });
@@ -62,7 +62,7 @@ jQuery(function ($) {
       finished: function () {
         setTimeout(function () {
           $("#pp-nav").removeClass("disabled");
-        }, 1200);
+        }, 12);
         setTimeout(function () {
           $(".pagepillingslider, .pagepillingsliderhero").removeClass("hidden");
 
@@ -75,7 +75,7 @@ jQuery(function ($) {
       finished: function () {
         setTimeout(function () {
           $("#showcase").removeClass("hidden");
-        }, 1000);
+        }, 10);
       }
     });
 
@@ -83,7 +83,7 @@ jQuery(function ($) {
       finished: function () {
         setTimeout(function () {
           $("#main-content").removeClass("hidden");
-        }, 1500);
+        }, 10);
       },
       waitForAll: true
     });
@@ -122,7 +122,7 @@ jQuery(function ($) {
 
       if (ClapatBarioThemeOptions.enable_preloader == true) {
 
-        in_duration = 1500;
+        in_duration = 10;
         loading_parent_element = 'html';
       }
     }
@@ -131,7 +131,7 @@ jQuery(function ($) {
       inClass: 'fade-in',
       outClass: 'fade-out',
       inDuration: in_duration,
-      outDuration: 400,
+      outDuration: 40,
       linkElement: '.animation-link',
       // e.g. linkElement: 'a:not([target="_blank"]):not([href^=#])'
       loading: true,
@@ -139,8 +139,8 @@ jQuery(function ($) {
       loadingClass: 'animsition-loading',
       loadingInner: '', // e.g '<img src="loading.svg" />'
       timeout: true,
-      timeoutCountdown: 5000,
-      onLoadEvent: true,
+      timeoutCountdown: 50,
+      onLoadEvent: false,
       browser: ['animation-duration', '-webkit-animation-duration'],
       // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
       // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
@@ -522,15 +522,6 @@ jQuery(function ($) {
           });
 
         }, (500));
-
-
-
-
-
-
-
-
-
         return false;
 
       });

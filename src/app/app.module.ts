@@ -12,6 +12,9 @@ import { ApartmentSpacesComponent } from './pages/general/apartment-spaces/apart
 import { ApartmentCardsComponent } from './pages/general/apartment-cards/apartment-cards.component';
 import { ApartmentDetailsComponent } from './pages/general/apartment-details/apartment-details.component';
 import { ExperienceStartComponent } from './pages/general/experience-start/experience-start.component';
+import { LoginComponent } from './pages/auth/login/login.component';
+import { SignupComponent } from './pages/auth/signup/signup.component';
+import { ForgotComponent } from './pages/auth/forgot/forgot.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { ExperienceStartComponent } from './pages/general/experience-start/exper
     ApartmentSpacesComponent,
     ApartmentCardsComponent,
     ApartmentDetailsComponent,
-    ExperienceStartComponent
+    ExperienceStartComponent,
+    LoginComponent,
+    SignupComponent,
+    ForgotComponent
   ],
   imports: [
     BrowserModule,

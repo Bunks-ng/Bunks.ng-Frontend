@@ -1,0 +1,11 @@
+.hamburger-user {
+    position: absolute;
+    bottom: 100px;
+    left: 25px;
+    padding: 0.5rem;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background-size: cover !important;
+    cursor: pointer;
+}

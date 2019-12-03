@@ -5,6 +5,9 @@ import {LandingComponent} from './pages/general/landing/landing.component';
 import { ApartmentSpacesComponent } from './pages/general/apartment-spaces/apartment-spaces.component';
 import { ApartmentDetailsComponent } from './pages/general/apartment-details/apartment-details.component';
 import { ExperienceStartComponent } from './pages/general/experience-start/experience-start.component'; 
+import { LoginComponent } from './pages/auth/login/login.component';
+import { ForgotComponent } from './pages/auth/forgot/forgot.component';
+import { SignupComponent } from './pages/auth/signup/signup.component';
 
 
 // {path: '', component: GeneralComponent},
@@ -14,7 +17,12 @@ children: [
   {path: '', component: LandingComponent},
   {path: 'spaces', component: ApartmentSpacesComponent},
   {path: 'space-details', component: ApartmentDetailsComponent},
-  {path: 'host-experience', component: ExperienceStartComponent}
+  {path: 'host-experience', component: ExperienceStartComponent},
+  {path: 'auth', children: [
+    {path: 'login', component: LoginComponent},
+    {path: 'signup', component: SignupComponent},
+    {path: 'forgot', component: ForgotComponent}
+  ]}
 ]}
 ];
 
