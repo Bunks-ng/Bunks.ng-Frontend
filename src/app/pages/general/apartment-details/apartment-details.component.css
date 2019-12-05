@@ -2,9 +2,38 @@
   flex-grow: 1;
 }
 
+.title-apartment {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+}
+
+.apartment-owner {
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  margin-top: 7px;
+  margin-left: auto;
+  background-size: cover !important;
+  cursor: pointer;
+}
+
+.hover-zoom {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.hover-zoom img {
+  transition: transform .5s ease;
+}
+
+.hover-zoom:hover img {
+  transform: scale(1.06);
+}
+
 .ammenities {
   margin-top: 18px;
-}   
+}
 
 .gundam {
   display: flex;

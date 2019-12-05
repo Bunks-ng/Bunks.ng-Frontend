@@ -6,7 +6,6 @@
 }
 
 
-
 .ld_button_5dbb7ed5b10cd.btn-icon-solid .btn-icon {
   background: rgb(156, 54, 23);
 }
@@ -48,20 +47,26 @@
 }
 
 
+
+
+
 .dig {
   font-size: 72px;
-  color: #000;
+  /* color: #000; */
   font-weight: 700;
   margin-top: .75em;
+  font-family: pompadour;
   margin-bottom: .75em;
   margin-left: 0;
   margin-right: -100%;
   line-height: 1em;
 }
 
+
+
 #bunks-comfort {
   width: 25%;
-  padding: 60px 0 60px 15px;
+  padding: 60px 0 60px 25px;
   z-index: 2000;
 }
 
@@ -108,23 +113,18 @@
   -ms-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
-
-
-
-
 @media(max-width: 360px) {
   .dig {
     font-size: 35px;
   }
 }
-
-
 @media(max-width: 550px) {
   .dig {
     font-size: 45px !important;
     text-align: center;
     margin-top: .75em !important;
     margin-bottom: .75em !important;
+    font-family: poppinsbold;
   }
 
   .hero-image {
@@ -142,7 +142,6 @@
   }
 
   .upp{
-    /* justify-content: left; */
   }
 
 

@@ -235,18 +235,18 @@ jQuery(function ($) {
       $("#project_close").toggleClass("disabled");
     });
 
-    $(".hamburger, #black-fade").on('click', function () {
-      $(".hamburger ").toggleClass("is-active");
-      $("header").toggleClass("is-active");
-      $("#menu-overlay").toggleClass("is-active");
-      $("#black-fade").toggleClass("is-active");
-      $("#header-title-div").toggleClass("is-active");
-      $('#black-fade').removeClass("hover");
-      $("#project_close").toggleClass("disabled");
+    $("#logo, #black-fade").on('click', function () {
+        $("#logo ").toggleClass("is-active");
+        $("header").toggleClass("is-active");
+        $("#menu-overlay").toggleClass("is-active");
+        $("#black-fade").toggleClass("is-active");
+        $("#header-title-div").toggleClass("is-active");
+        $('#black-fade').removeClass("hover");
+        $("#project_close").toggleClass("disabled");
     });
 
     $(".header_menu").mouseleave(function () {
-      $(".hamburger, .hamburger-user ").removeClass("is-active");
+      $("#logo, .hamburger-user ").removeClass("is-active");
       $("header").removeClass("is-active");
       $("#menu-overlay, #menu-overlayt").removeClass("is-active");
       $("#header-title-div").removeClass("is-active");
@@ -255,7 +255,7 @@ jQuery(function ($) {
     })
 
 
-    $(".hamburger, .hamburger-user").on({
+    $("#logo, .hamburger-user").on({
       mouseenter: function () {
         $('#black-fade').addClass("hover");
       },
