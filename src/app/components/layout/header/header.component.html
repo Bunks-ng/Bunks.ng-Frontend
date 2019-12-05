@@ -12,7 +12,8 @@
       <div id="header-title-div" style="">
         <div id="header-title" style="">BUNKERS Menu</div>
       </div>
-      <div routerLink = "/auth/login" class="hamburger-user" style="background: url('./assets/img/user-4.jpg')"></div>
+      <!-- routerLink = "/auth/login" -->
+      <div class="hamburger-user" style="background: url('./assets/img/user-4.jpg')"></div>
       <!-- Menu Button -->
       <button class="hamburger hamburger-rotate hidden">
         <span>toggle menu</span>
@@ -31,7 +32,7 @@
           <ul id="menu-main-menu" class="main-menu">
 
             <li id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84">
-              <a [routerLink]="'/host-experience'" class=" menu-link">Host an activity</a>
+              <a [routerLink]="'/host-experience'" class="animation-link menu-link">Host an activity</a>
             </li><br>
 
           </ul>
@@ -53,5 +54,25 @@
       </div>
     </div>
   </div>
+  <div id="menu-overlayt">
+    <div class="outer">
+      <div class="inner">
+        <div id="close-menu"></div>
+        <nav class="menu-main-menu-container">
+          <ul id="menu-main-menu" class="main-menu">
+  
+            <li id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84">
+              <a routerLink = "/auth/login" class="animation-link menu-link">Login</a>
+            </li><br>
+            <li id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84">
+              <a routerLink = "/auth/signup" class="animation-link menu-link">Signup</a>
+            </li><br>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  
   <!-- Menu Overlay -->
 </div>
+

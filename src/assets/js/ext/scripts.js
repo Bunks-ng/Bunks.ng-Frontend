@@ -46,7 +46,7 @@ jQuery(function ($) {
 
 
     setTimeout(function () {
-      $("header, .hamburger, footer, #sidebar").removeClass("hidden");
+      $("header, .hamburger-user, .hamburger, footer, #sidebar").removeClass("hidden");
     }, 50);
 
     $('#hero').waitForImages({
@@ -225,6 +225,15 @@ jQuery(function ($) {
   function OpenHeader() {
 
 
+    $(".hamburger-user, #black-fade").on('click', function () {
+      $(".hamburger-user").toggleClass("is-active");
+      $("header").toggleClass("is-active");
+      $("#menu-overlayt").toggleClass("is-active");
+      $("#black-fade").toggleClass("is-active");
+      $("#header-title-div").toggleClass("is-active");
+      $('#black-fade').removeClass("hover");
+      $("#project_close").toggleClass("disabled");
+    });
 
     $(".hamburger, #black-fade").on('click', function () {
       $(".hamburger ").toggleClass("is-active");
@@ -237,16 +246,16 @@ jQuery(function ($) {
     });
 
     $(".header_menu").mouseleave(function () {
-      $(".hamburger ").removeClass("is-active");
+      $(".hamburger, .hamburger-user ").removeClass("is-active");
       $("header").removeClass("is-active");
-      $("#menu-overlay").removeClass("is-active");
+      $("#menu-overlay, #menu-overlayt").removeClass("is-active");
       $("#header-title-div").removeClass("is-active");
       $("#black-fade").removeClass("is-active");
       $("#project_close").removeClass("disabled");
     })
 
 
-    $(".hamburger").on({
+    $(".hamburger, .hamburger-user").on({
       mouseenter: function () {
         $('#black-fade').addClass("hover");
       },

@@ -157,10 +157,12 @@
   }
   #dig{
     flex-direction: column;
+    height: fit-content;
   }
 
   #spaces{
     padding: 1rem 1rem;
+    border-bottom: 1px solid #eae7e7;
   }
 
   #locationspace{

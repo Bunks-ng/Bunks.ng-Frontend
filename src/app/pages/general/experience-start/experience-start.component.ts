@@ -19,7 +19,7 @@ export class ExperienceStartComponent implements OnInit {
     './assets/js/dist/js_composer_front.min.js',
     './assets/js/ext/scripts.js',
     './assets/js/ext/wp-embed.min.js',
-  ]
+  ];
 
   ngOnInit() {
     this.appService.loadScriptPage(this.scripts);
