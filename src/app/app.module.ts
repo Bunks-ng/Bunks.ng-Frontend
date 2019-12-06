@@ -15,6 +15,7 @@ import { ExperienceStartComponent } from './pages/general/experience-start/exper
 import { LoginComponent } from './pages/auth/login/login.component';
 import { SignupComponent } from './pages/auth/signup/signup.component';
 import { ForgotComponent } from './pages/auth/forgot/forgot.component';
+import { LandlordPortfolioComponent } from './pages/general/landlord-portfolio/landlord-portfolio.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ForgotComponent } from './pages/auth/forgot/forgot.component';
     ExperienceStartComponent,
     LoginComponent,
     SignupComponent,
-    ForgotComponent
+    ForgotComponent,
+    LandlordPortfolioComponent
   ],
   imports: [
     BrowserModule,

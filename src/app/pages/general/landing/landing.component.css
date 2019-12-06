@@ -87,19 +87,20 @@
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15) !important;
 }
 
-#spaces{
+#spaces {
   border: none;
   padding: 0 1rem;
   border-right: 2px solid #F2F2F2;
   font-family: poppinsr;
 }
 
-#locationspace{
+#locationspace {
   flex-grow: 10;
   border: none;
   padding: 0 1rem;
   font-family: poppinssb;
 }
+
 #heroo {
   box-sizing: border-box;
   position: relative;
@@ -113,13 +114,17 @@
   -ms-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
+
 @media(max-width: 360px) {
   .dig {
     font-size: 35px;
   }
 }
+
 @media(max-width: 550px) {
   .dig {
+    position: relative;
+    top: 18px;
     font-size: 40px !important;
     text-align: center;
     margin-top: .75em !important;
@@ -138,38 +143,39 @@
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
-    margin-top: 50px !important;
+    margin-top: 0px !important;
   }
-
-  .upp{
-  }
-
-
 }
 
-@media(max-width: 670px){
+@media(max-width: 670px) {
   .upp {
+    position: relative;
+    top: 13px;
     width: 100% !important;
     margin-bottom: -20px !important;
     padding-top: 10px !important;
     justify-content: center;
   }
-  #dig{
+
+  #dig {
     flex-direction: column;
     height: fit-content;
+    position: relative;
+    top: 8px;
   }
 
-  #spaces{
+  #spaces {
     padding: 1rem 1rem;
     border-bottom: 1px solid #eae7e7;
   }
 
-  #locationspace{
+  #locationspace {
     padding: 1rem 1rem;
   }
 
-  .ld_button_5dbb7ed5b10cd{
-    margin-top: 2rem;
+  .ld_button_5dbb7ed5b10cd {
+    position: relative;
+    bottom: 10px;
   }
 }
 
@@ -178,14 +184,22 @@
   .control-all {
     margin-top: -120px;
   }
+
+  #heroo {
+    margin-top: -170px !important;
+  }
+
+  .start-bunks{
+    height: 120vh !important;
+  }
 }
 
 @media(max-width: 1019px) {
-  .breaknext{
+  .breaknext {
     display: none;
   }
 
-  .coversearch{
+  .coversearch {
     width: 100%;
   }
 
@@ -199,7 +213,7 @@
 
   .hero-image {
     width: 80% !important;
-    margin-top: -60px !important;
+    margin-top: -20px !important;
     height: 50% !important;
   }
 
@@ -213,7 +227,7 @@
     margin-right: 0 !important;
   }
 
-  #dig{
+  #dig {
     margin-right: 0 !important;
   }
 
