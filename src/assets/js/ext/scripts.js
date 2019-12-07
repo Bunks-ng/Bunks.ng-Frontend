@@ -79,6 +79,8 @@ jQuery(function ($) {
       }
     });
 
+    // $("#main-content").removeClass("hidden");
+
     $('#main').waitForImages({
       finished: function () {
         setTimeout(function () {
@@ -778,11 +780,52 @@ jQuery(function ($) {
 
   function Carousel() {
 
+    if( $('.experience-carousel').length > 0 ){
+            
+      $(".experience-carousel").owlCarousel({	
+          loop:false,
+          margin:120,
+          autoplay: false,
+          autoplayTimeout: 7000,
+          dots:false,
+          responsive:{
+              0:{
+                  items:2
+              },
+              600:{
+                  items:2
+              },            
+              960:{
+                  items:4
+              },
+              1200:{
+                  items:5
+              },
+              1500:{
+                  items:6
+              }
+          }
+          
+      });
+    
+  }
+
+  if ($('.text-carousel').length > 0) {
+
+    $(".text-carousel").owlCarousel({
+      loop: true,
+      dots: true,
+      dotsEach: 1,
+      items: 1,
+    });
+
+  }
+
     if( $('.clients-carousel').length > 0 ){
             
         $(".clients-carousel").owlCarousel({	
             loop:false,
-            margin:120,
+            margin:300,
             autoplay: false,
             autoplayTimeout: 7000,
             dots:false,

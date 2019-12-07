@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {AppService} from '../../../services/app.service';
+import { scrollTop } from 'src/app/utils/scroll-to-top';
 
 @Component({
   selector: 'app-landing',
@@ -11,7 +12,10 @@ export class LandingComponent implements OnInit {
 
   constructor(
     private appService: AppService
-  ) { }
+  ) { 
+    this.appService.loadScriptPage(this.scripts);
+    scrollTop();
+  }
 
   scripts = [
     './assets/js/jquery/jquery.js',
@@ -23,7 +27,6 @@ export class LandingComponent implements OnInit {
   ];
 
   ngOnInit() {
-    this.appService.loadScriptPage(this.scripts);
   }
 
 }

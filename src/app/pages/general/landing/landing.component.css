@@ -5,6 +5,9 @@
   align-items: center !important;
 }
 
+.control-all{
+  margin-top: -100px;
+}
 
 .ld_button_5dbb7ed5b10cd.btn-icon-solid .btn-icon {
   background: rgb(156, 54, 23);

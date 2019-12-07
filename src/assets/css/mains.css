@@ -13,6 +13,18 @@
 	}
 
 	@font-face {
+	  font-family: "pompadour-light";
+	  font-weight: 400;
+	  font-style: bold;
+	  src: url("fonts/02_APompadourTextSample.ttf");
+	}
+
+	@font-face {
+	  font-family: "coco-light";
+	  src: url("fonts/CocoGothic-Light_trial.ttf");
+	}
+
+	@font-face {
 	  font-family: "poppinssb";
 	  src: url("fonts/Poppins-SemiBold.ttf")
 	}
@@ -286,6 +298,19 @@
 
 	#cliont .df {
 	  margin-left: 20px !important;
+	}
+
+	#cliont .df:hover{
+		cursor: pointer;
+	}
+
+	.feature:focus{
+		border-radius: 12px;
+	}
+
+	.subs {
+	  position: relative;
+	  left: 20px;
 	}
 
 
@@ -895,18 +920,16 @@
 	}
 
 	.mai {
-	  width: 14rem;
+	  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15) !important;
+	  width: 17rem;
 	  display: flex;
 	  flex-wrap: wrap;
-	  height: 4.6em;
-	  margin: auto;
+	  height: 5.3em;
 	  font-family: poppinsr;
 	  font-size: 14px;
-	  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px !important;
 	  border: 1px solid rgba(0, 0, 0, 0.1) !important;
-	  border-radius: 3px !important;
+	  border-radius: 12px !important;
 	  overflow: hidden !important;
-	  /* border-width: 1px !important; */
 	}
 
 	.maii {
@@ -1484,30 +1507,6 @@
 	  text-align: center;
 	}
 
-	.abuleoja {
-	  background: url("../img/abule.jpg") no-repeat;
-	  background-size: cover;
-	  /* background-position: bottom; */
-	}
-
-	.pako {
-	  background: url("../img/pako.jpg") no-repeat;
-	  background-size: cover;
-	  /* background-position: bottom; */
-	}
-
-	.yaba {
-	  background: url("../img/yaba.jpg") no-repeat;
-	  background-size: cover;
-	  /* background-position: bottom; */
-	}
-
-	.chemist {
-	  background: url("../img/chemist.jpg") no-repeat;
-	  background-size: cover;
-	  /* background-position: bottom; */
-	}
-
 	.smallerr {
 	  font-family: "Montserrat", sans-serif;
 	  font-size: 14px !important;
@@ -1515,6 +1514,12 @@
 	  letter-spacing: 3px !important;
 	  color: rgb(171, 106, 66) !important;
 	  text-transform: uppercase;
+	}
+
+	#smaller-pompadour {
+	  font-family: poppinsr !important;
+	  font-size: 12px !important;
+	  font-weight: 500 !important;
 	}
 
 
@@ -7084,6 +7089,21 @@
 	  margin: 0;
 	  padding: 0;
 	}
+
+	.experience-carousel {
+	  margin: 0;
+	  padding: 0;
+	}
+
+	.experience-carousel li {
+	  margin: 0;
+	  padding: 0;
+	  list-style: none;
+	}
+
+	.experience-carousel li:hover {}
+
+
 
 
 	/* Animated module */
