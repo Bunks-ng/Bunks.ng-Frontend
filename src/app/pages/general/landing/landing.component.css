@@ -5,8 +5,13 @@
   align-items: center !important;
 }
 
-.control-all{
+.control-all {
   margin-top: -100px;
+}
+
+.slide-slide {
+  position: relative;
+  bottom: 10px;
 }
 
 .ld_button_5dbb7ed5b10cd.btn-icon-solid .btn-icon {
@@ -18,17 +23,20 @@
 }
 
 .ld_button_5dbb7ed5b10cd .btn-split-bg {
-  background: rgb(255, 225, 216);
+  /* background: rgb(255, 225, 216); */
+  background: #9becbd;
 }
 
 .ld_button_5dbb7ed5b10cd {
-  color: rgb(166, 106, 86);
+  color: #3f3f3f;
+  /* color: rgb(166, 106, 86); */
   font-size: 14px !important;
   font-weight: 700 !important;
 }
 
 .ld_button_5dbb7ed5b10cd:hover {
-  color: rgb(79, 16, 16);
+  /* color: rgb(79, 16, 16); */
+  color: #2e2c2c;
 }
 
 
@@ -188,11 +196,15 @@
     margin-top: -120px;
   }
 
+  .slide-slide{
+    top: 15px;
+  }
+
   #heroo {
     margin-top: -170px !important;
   }
 
-  .start-bunks{
+  .start-bunks {
     height: 120vh !important;
   }
 }
