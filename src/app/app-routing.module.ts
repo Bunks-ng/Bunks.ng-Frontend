@@ -9,6 +9,8 @@ import { LoginComponent } from './pages/auth/login/login.component';
 import { ForgotComponent } from './pages/auth/forgot/forgot.component';
 import { SignupComponent } from './pages/auth/signup/signup.component';
 import { LandlordPortfolioComponent } from './pages/general/landlord-portfolio/landlord-portfolio.component';
+import { UserSettingsComponent } from './pages/general/user-settings/user-settings.component';
+import { PasswordSettingComponent } from './pages/general/password-setting/password-setting.component';
 
 
 // {path: '', component: GeneralComponent},
@@ -24,7 +26,11 @@ children: [
     {path: 'signup', component: SignupComponent},
     {path: 'forgot', component: ForgotComponent}
   ]},
-  {path: 'landlord-portfolio', component: LandlordPortfolioComponent}
+  {path: 'host-portfolio', component: LandlordPortfolioComponent},
+  {path: 'landlord', children: [
+    {path: 'update-profile', component: UserSettingsComponent},
+    {path: 'password-setting', component: PasswordSettingComponent}
+  ]}
 ]}
 ];
 

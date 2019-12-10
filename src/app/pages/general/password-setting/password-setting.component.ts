@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import {AppService} from '../../../services/app.service';
+import { AppService } from 'src/app/services/app.service';
 import { scrollTop } from 'src/app/utils/scroll-to-top';
 
 @Component({
-  selector: 'app-landlord-portfolio',
-  templateUrl: './landlord-portfolio.component.html',
-  styleUrls: ['./landlord-portfolio.component.css']
+  selector: 'app-password-setting',
+  templateUrl: './password-setting.component.html',
+  styleUrls: ['./password-setting.component.css']
 })
-export class LandlordPortfolioComponent implements OnInit {
+export class PasswordSettingComponent implements OnInit {
 
   constructor(
     private appService: AppService
@@ -21,8 +21,7 @@ export class LandlordPortfolioComponent implements OnInit {
     './assets/js/ext/plugins.js',
     './assets/js/ext/scripts.js',
   ];
-
+  
   ngOnInit() {
   }
-
 }

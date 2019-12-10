@@ -3263,7 +3263,7 @@
 	}
 
 	#menu-overlayt {
-	  width: 300px;
+	  width: 480px;
 	  height: 100%;
 	  position: fixed;
 	  background-color: #fff;
@@ -3461,7 +3461,9 @@
 	  padding: 10px 20px 2px;
 	  z-index: 1;
 	  text-decoration: none;
-	  font-size: 12px;
+	  font-family: coco-light;
+	  font-size: 14px;
+	  font-weight: 600;
 	  color: #777;
 	  line-height: 20px !important;
 	}

@@ -31,15 +31,15 @@
         <nav class="menu-main-menu-container">
           <ul id="menu-main-menu" class="main-menu">
 
-              <li id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84">
-                  <a [routerLink]="'/'" class="animation-link menu-link">Home</a>
-                </li>
-                <li id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84">
-                    <a [routerLink]="'/spaces'" class="animation-link menu-link">Search Hostels</a>
-                  </li>
-                  <li id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84">
-                      <a [routerLink]="'/spaces'" class="animation-link menu-link">Search Apartments</a>
-                    </li>
+            <li id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84">
+              <a [routerLink]="'/'" class="animation-link menu-link">Home</a>
+            </li>
+            <li id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84">
+              <a [routerLink]="'/spaces'" class="animation-link menu-link">Search Hostels</a>
+            </li>
+            <li id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84">
+              <a [routerLink]="'/spaces'" class="animation-link menu-link">Search Apartments</a>
+            </li>
             <li id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84">
               <a [routerLink]="'/host-apartment'" class="animation-link menu-link">Host a Shared Apartment</a>
             </li>
@@ -50,29 +50,15 @@
 
           </ul>
         </nav>
-        <div class="menu-footer">
-          <ul class="socials">
-            <li>
-              <a href="https://www.facebook.com/bunks" target="_blank"><i class="fa fa-facebook"></i></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/bunks" target="_blank"><i class="fa fa-twitter" style="padding:7px;"></i></a>
-            </li>
-            <li>
-              <a href="https://www.behance.net/bunks" target="_blank"><i class="fa fa-behance"></i></a>
-            </li>
-          </ul>
-          <p class="copyright">2018 © bunks. All rights reserved.</p>
-        </div>
       </div>
     </div>
   </div>
   <div id="menu-overlayt">
     <div class="outer">
-      <div class="inner">
+      <div class="inner" style="">
         <div id="close-menu"></div>
         <nav class="menu-main-menu-container">
-          <ul id="menu-main-menu" class="main-menu">
+          <ul id="menu-main-menu" class="main-menu" style="position: relative;">
 
             <li id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84">
               <a routerLink="/auth/login" class="animation-link menu-link">Login</a>
@@ -80,8 +66,36 @@
             <li id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84">
               <a routerLink="/auth/signup" class="animation-link menu-link">Signup</a>
             </li><br>
+            <li id="menu-item-75"
+              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-75 has-sub">
+              <a>Landlord Menu</a>
+              <ul class="sub-menu">
+                <li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76"><a
+                    routerLink="/landlord/update-profile" class="animation-link menu-link">Update Profile</a>
+                </li>
+                <li id="menu-item-77" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-77"><a
+                     class="animation-link menu-link">Upload Apartments</a></li>
+                <li id="menu-item-180" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-180">
+                  <a  class="animation-link menu-link">View all Apartments</a></li>
+                <li id="menu-item-180" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-180">
+                  <a class="animation-link menu-link">Update Apartments</a></li>
+                <li id="menu-item-75"
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-75 has-sub">
+                  <a>Password Settings</a>
+                  <ul class="sub-menu">
+                    <li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76">
+                      <a routerLink="/landlord/password-setting" class="animation-link menu-link">Update Password</a>
+                    </li>
+                    <!-- <li id="menu-item-77" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-77">
+                      <a href="../../personal-resume/index.html" class="animation-link menu-link">Something password</a>
+                    </li> -->
+                  </ul>
+                </li>
+              </ul>
+            </li>
           </ul>
         </nav>
+        <div class="signout"><i class="fa fa-sign-out"></i> Logout</div>
       </div>
     </div>
   </div>

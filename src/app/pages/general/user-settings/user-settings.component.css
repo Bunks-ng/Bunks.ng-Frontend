@@ -1,0 +1,250 @@
+.host-container {
+  display: flex;
+  height: 200vh;
+  /* background: red; */
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.divider {
+  padding: 0;
+  position: absolute;
+  top: 15%;
+}
+
+.imgh {
+  background: url("../../../../assets/img/update-profiles.jpg") no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.input-field {
+  margin: 10px;
+  border: 1px solid rgba(19, 20, 49, .1);
+  border-radius: 5px;
+  max-width: 417px;
+  width: 80%;
+  text-align: left;
+  font-size: 1.1em;
+  color: #6d6d6d;
+  transition: background-color .1s ease-in-out;
+  padding: 33px 20px;
+}
+
+.input-submit {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  position: relative;
+  top: -20px;
+}
+
+.more-details {
+  position: relative;
+  bottom: 24px;
+}
+
+.update-p {
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.landlord-box {
+  box-sizing: border-box;
+  box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.09);
+  width: 50%;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+.user-listing {
+  position: relative;
+  bottom: 60px;
+}
+
+.host-details {
+  /* background: orange; */
+  flex-grow: 1;
+  padding-top: 7%;
+  max-width: 55%;
+}
+
+.host-identical-size {
+  position: relative;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.host-image {
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+  width: 100px;
+  height: 100px;
+  background-size: cover !important;
+  border-radius: 50px;
+}
+
+.host-credentials {
+  display: flex !important;
+  /* background: #e8e8e9; */
+  position: absolute;
+  width: 100%;
+  top: 22%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.credential-inner {
+  top: 6px;
+  position: relative;
+}
+
+.credential-inner-govt {
+  position: relative;
+  top: 14px;
+}
+
+.credential-item {
+  padding: 7px 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+}
+
+.credential-item svg {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -26px;
+  bottom: 9px;
+}
+
+.credential-item-govt {
+  padding: 7px 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+}
+
+.credential-item-govt svg {
+  width: 17px;
+  height: 17px;
+  position: relative;
+  bottom: -3px;
+  fill: rgb(0, 132, 137);
+}
+
+.host-credentials-govt {
+  display: flex !important;
+  position: absolute;
+  width: 100%;
+  top: 47%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.host-credentials-govt span {
+  font-family: poppinssb;
+  color: #232222;
+}
+
+.mobile-show {
+  display: none;
+}
+
+.second {
+  top: 40% !important;
+}
+
+@media(max-width: 520px) {
+  .landlord-box {
+    width: 100% !important;
+    top: 200px !important;
+  }
+
+  .host-details {
+    max-width: 100% !important;
+  }
+}
+
+@media(max-width: 727px) {
+  .landlord-box {
+    width: 100% !important;
+  }
+
+  .user-listing {
+    top: 190px !important;
+  }
+
+  .checks {
+    left: 10px !important;
+  }
+}
+
+@media(max-width: 900px) {
+  .checks {
+    padding: 0 40px !important;
+    left: 30px;
+    position: relative;
+  }
+}
+
+@media(max-width: 1199px) {
+  .checks {
+    padding: 0 90px;
+  }
+
+  .host-details {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .user-listing {
+    bottom: 0;
+    top: 120px;
+  }
+
+  .landlord-box {
+    height: fit-content !important;
+    padding-bottom: 40px;
+  }
+
+  .mobile-show {
+    display: block;
+    position: relative;
+    top: 35px;
+  }
+
+  .one {
+    position: inherit;
+    top: 0 !important;
+  }
+
+  .desktop-show {
+    display: none;
+  }
+
+  .host-container {
+    flex-direction: column;
+    /* background: red; */
+  }
+
+  .landlord-box {
+    position: relative;
+    top: 150px;
+    width: 70%;
+    display: flex;
+    margin: auto;
+  }
+}
