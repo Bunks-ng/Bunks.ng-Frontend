@@ -161,6 +161,12 @@
   display: none;
 }
 
+
+.stubb {
+  position: relative;
+  left: 9%;
+}
+
 .second {
   top: 40% !important;
 }
@@ -173,12 +179,34 @@
 
   .host-details {
     max-width: 100% !important;
+    margin: 30% auto !important;
   }
 }
 
 @media(max-width: 727px) {
+
+  .stubb {
+    left: 0 !important;
+  }
+
+  .input-submit{
+    width: 80% !important;
+  }
+
+  #stub {
+    width: 100%;
+    position: relative;
+    left: 20px;
+  }
+
+  .update-p {
+    margin: auto !important;
+    /* left: -10px; */
+  }
+
   .landlord-box {
     width: 100% !important;
+    display: none !important;
   }
 
   .user-listing {
@@ -232,7 +260,7 @@
   }
 
   .desktop-show {
-    display: none;
+    /* display: none; */
   }
 
   .host-container {
