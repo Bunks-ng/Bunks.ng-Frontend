@@ -11,6 +11,12 @@
   box-shadow: 0 0 10px #fff;
 }
 
+.menu-awe {
+  color: #4a5f50;
+  font-weight: 600;
+  margin-right: 6px;
+}
+
 @media only screen and (max-width: 479px) {
 
   .hamburger-user {
