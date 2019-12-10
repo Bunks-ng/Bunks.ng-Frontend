@@ -46,6 +46,19 @@
 	  box-sizing: border-box;
 	}
 
+	body::-webkit-scrollbar {
+		width: 0.5em;
+	}
+
+	body::-webkit-scrollbar-track {
+		background: #f7f7f7;
+	}
+
+	body::-webkit-scrollbar-thumb {
+		background-color: #666;
+		border-radius: 10px;
+	}
+
 
 	address {
 	  font-style: italic;
@@ -1743,7 +1756,6 @@
 	  border-color: initial !important;
 	  border-image: initial !important;
 	  overflow: hidden !important;
-	  /* font-family: poppinsr; */
 	  padding: 0px !important;
 	}
 
