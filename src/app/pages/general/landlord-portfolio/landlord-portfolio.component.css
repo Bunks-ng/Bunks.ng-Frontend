@@ -198,6 +198,7 @@
   }
 
   .desktop-show {
+    width: 100%;
     display: none;
   }
 

@@ -189,10 +189,6 @@
     left: 0 !important;
   }
 
-  .input-submit{
-    width: 80% !important;
-  }
-
   #stub {
     width: 100%;
     position: relative;
@@ -227,6 +223,10 @@
 }
 
 @media(max-width: 1199px) {
+  .input-submit {
+    width: 80% !important;
+  }
+
   .checks {
     padding: 0 90px;
   }
