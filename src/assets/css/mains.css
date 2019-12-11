@@ -25,6 +25,16 @@
 	}
 
 	@font-face {
+	  font-family: "coco-regular";
+	  src: url("fonts/CocoGothic_trial.ttf");
+	}
+
+	@font-face {
+	  font-family: "coco-heavy";
+	  src: url("fonts/CocoGothic-Bold_trial.ttf");
+	}
+
+	@font-face {
 	  font-family: "poppinssb";
 	  src: url("fonts/Poppins-SemiBold.ttf")
 	}
@@ -47,16 +57,16 @@
 	}
 
 	body::-webkit-scrollbar {
-		width: 0.5em;
+	  width: 0.5em;
 	}
 
 	body::-webkit-scrollbar-track {
-		background: #f7f7f7;
+	  background: #f7f7f7;
 	}
 
 	body::-webkit-scrollbar-thumb {
-		background-color: #666;
-		border-radius: 10px;
+	  background-color: #666;
+	  border-radius: 10px;
 	}
 
 
@@ -313,12 +323,12 @@
 	  margin-left: 20px !important;
 	}
 
-	#cliont .df:hover{
-		cursor: pointer;
+	#cliont .df:hover {
+	  cursor: pointer;
 	}
 
-	.feature:focus{
-		border-radius: 12px;
+	.feature:focus {
+	  border-radius: 12px;
 	}
 
 	.subs {
@@ -3275,7 +3285,8 @@
 	}
 
 	#menu-overlayt {
-	  width: 480px;
+	  overflow-y: scroll;
+	  width: 400px;
 	  height: 100%;
 	  position: fixed;
 	  background-color: #fff;
@@ -3296,6 +3307,19 @@
 	  -ms-transition: all 0.5s ease-in-out;
 	  transition: all 0.5s ease-in-out;
 	}
+
+	#menu-overlayt::-webkit-scrollbar {
+		width: 0em;
+	  }
+  
+	  #menu-overlayt::-webkit-scrollbar-track {
+		background: #f7f7f7;
+	  }
+  
+	  #menu-overlayt::-webkit-scrollbar-thumb {
+		background-color: #666;
+		border-radius: 10px;
+	  }
 
 	#menu-overlayt.is-active {
 	  -webkit-transform: translateX(80px);
@@ -3329,7 +3353,8 @@
 
 
 	#menu-overlay {
-	  width: 500px;
+	  width: 400px;
+	  overflow-y: scroll;
 	  height: 100%;
 	  position: fixed;
 	  background-color: #fff;
@@ -3349,6 +3374,19 @@
 	  -o-transition: all 0.5s ease-in-out;
 	  -ms-transition: all 0.5s ease-in-out;
 	  transition: all 0.5s ease-in-out;
+	}
+
+	#menu-overlay::-webkit-scrollbar {
+	  width: 0em;
+	}
+
+	#menu-overlay::-webkit-scrollbar-track {
+	  background: #f7f7f7;
+	}
+
+	#menu-overlay::-webkit-scrollbar-thumb {
+	  background-color: #666;
+	  border-radius: 10px;
 	}
 
 	#menu-overlay.is-active {
@@ -9371,7 +9409,6 @@
 
 	  .may {
 	    width: 50% !important;
-	    /* background: orange; */
 	  }
 
 	  #menu-overlay nav {
@@ -9380,15 +9417,6 @@
 
 	  nav {
 	    margin-bottom: 100px !important;
-	  }
-
-	  #pp-nav,
-	  #clapat-nav {
-	    /*display: none;*/
-	  }
-
-	  .menu-footer {
-	    /*display: none;*/
 	  }
 
 	  .copyright {
@@ -9586,8 +9614,8 @@
 
 	  #menu-overlay {
 	    width: 100%;
-	    text-align: center;
 	    overflow-y: scroll;
+	    padding: 100px 0;
 	  }
 
 	  #menu-overlay .inner {
@@ -9597,6 +9625,26 @@
 	  }
 
 	  #menu-overlay.is-active {
+	    -webkit-transform: translateX(0px);
+	    -moz-transform: translateX(0px);
+	    -o-transform: translateX(0px);
+	    -ms-transform: translateX(0px);
+	    transform: translateX(0px);
+	  }
+
+	  #menu-overlayt {
+	    width: 100%;
+	    overflow-y: scroll;
+	    padding: 100px 0;
+	  }
+
+	  #menu-overlayt .inner {
+	    vertical-align: middle;
+	    box-sizing: border-box;
+	    padding: 100px 0;
+	  }
+
+	  #menu-overlayt.is-active {
 	    -webkit-transform: translateX(0px);
 	    -moz-transform: translateX(0px);
 	    -o-transform: translateX(0px);

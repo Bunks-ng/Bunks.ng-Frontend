@@ -11,16 +11,112 @@
   box-shadow: 0 0 10px #fff;
 }
 
+.menu-inner {
+  display: flex !important;
+  height: inherit !important;
+  padding: 50px 50px !important;
+  flex-direction: column !important;
+}
+
 .menu-awe {
   color: #4a5f50;
   font-weight: 600;
   margin-right: 6px;
 }
 
+.auth-button {
+  cursor: pointer !important;
+  display: inline-block !important;
+  position: relative !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  outline: none !important;
+  padding-top: 13px !important;
+  padding-bottom: 13px !important;
+  padding-left: 23px !important;
+  padding-right: 23px !important;
+  -webkit-transition: box-shadow 0.2s ease, -webkit-transform 0.1s ease, transform 0.1s ease !important;
+  -moz-transition: box-shadow 0.2s ease, transform 0.1s ease !important;
+  transition: box-shadow 0.2s ease, -ms-transform 0.1s ease, -webkit-transform 0.1s ease, transform 0.1s ease !important;
+  border-color: #222222 !important;
+  background: #FFFFFF !important;
+  color: #222222 !important;
+  width: 100% !important;
+  margin: 5px 8px;
+}
+
 .sub-menu {
   position: relative;
   top: 7px;
   left: 13px;
+}
+
+.titl {
+  position: relative;
+  bottom: 15px;
+  letter-spacing: 0px !important;
+}
+
+.under-host {
+  top: -10px;
+}
+
+.grouping-menu {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: left;
+}
+
+.grouping-menu span {
+  color: #484848;
+  font-size: 24px;
+  font-family: coco-regular;
+  font-weight: 700;
+  cursor: default;
+}
+
+.span2 {
+  font-family: coco-light !important;
+  color: rgb(43, 122, 113) !important;
+  font-size: 16px !important;
+  font-weight: 200 !important;
+  cursor: pointer !important;
+}
+
+.grouping-m {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  padding: 8px 0;
+  margin: 5px 0;
+  position: relative;
+}
+
+.grouping-m:hover,
+.grouping-m span:hover {
+  color: #000000;
+}
+
+.grouping-m:focus {
+  outline: none !important;
+}
+
+.grouping-m span {
+  position: absolute;
+  left: 30px;
+  bottom: 2px;
+  font-size: 18px;
+  font-weight: 550;
+  font-family: coco-light !important;
+  cursor: pointer;
 }
 
 header {
