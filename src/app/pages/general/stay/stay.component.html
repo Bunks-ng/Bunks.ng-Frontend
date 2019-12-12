@@ -1,0 +1,225 @@
+<div id="main">
+  <div id="main-content" class="hidden">
+    <div class="abss">
+      <div class="abs">
+        <button class="clapat-button button-back"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20"
+            height="20" viewBox="0 0 172 172" style=" fill:#000000;">
+            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+              stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+              font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+              <path d="M0,172v-172h172v172z" fill="none"></path>
+              <g fill="#333333">
+                <path
+                  d="M120.33281,13.73313c-0.90031,0.01344 -1.74688,0.38969 -2.365,1.03469l-68.8,68.8c-1.34375,1.34375 -1.34375,3.52062 0,4.86437l68.8,68.8c0.86,0.90031 2.15,1.26313 3.34594,0.94063c1.20938,-0.30906 2.15,-1.24969 2.45906,-2.45906c0.3225,-1.19594 -0.04031,-2.48594 -0.94063,-3.34594l-66.36781,-66.36781l66.36781,-66.36781c1.02125,-0.99437 1.31688,-2.49937 0.76594,-3.80281c-0.55094,-1.31688 -1.84094,-2.15 -3.26531,-2.09625z">
+                </path>
+              </g>
+            </g>
+          </svg> <span class="backo">Back</span>
+        </button>
+        <button class="clapat-button bu" (click)="navigateToSection('srt')">Next</button>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress__level"></div>
+    </div>
+    <div class="po">
+      <div class="section">
+        <!-- <div class="oop"></div> -->
+        <div class="fixed" style="top: 40% !important; padding-bottom: 100px;">
+          <div class="contain">
+            <div class="large">What kind of place are you listing</div>
+            <div style="margin-bottom: 8px;
+            position: relative;
+            top: 48px">
+              <div class="subb">First, let’s narrow things down</div>
+            </div>
+          </div>
+          <div class="whole-cont">
+            <a class="part-cont">
+              <input type="radio" value="apartment" id="property-type-apartment"
+                style="opacity: 0; position: absolute;">
+              <label for="property-type">
+                <svg class="s" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                  viewBox="0 0 172 172">
+                  <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                    style="mix-blend-mode: normal">
+                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                    <g fill="#333333">
+                      <path
+                        d="M85.87235,3.62813c-0.72195,0.0249 -1.41775,0.27642 -1.98875,0.71891l-79.12,61.7386c-1.49911,1.16886 -1.76683,3.33167 -0.59797,4.83078c1.16886,1.49911 3.33167,1.76683 4.83078,0.59797l4.76359,-3.71547v90.4411c0.00019,1.89978 1.54022,3.43981 3.44,3.44h47.58219c0.37149,0.0614 0.75054,0.0614 1.12203,0h40.15797c0.37149,0.0614 0.75054,0.0614 1.12203,0h47.61578c1.89978,-0.00019 3.43981,-1.54022 3.44,-3.44v-90.4411l4.7636,3.71547c0.96974,0.75623 2.26928,0.93763 3.40904,0.47586c1.13976,-0.46177 1.94657,-1.49654 2.11649,-2.71449c0.16992,-1.21795 -0.32287,-2.43403 -1.29273,-3.19012l-26.1964,-20.43844v-25.00719h-20.64v8.89562l-32.2836,-25.18859c-0.64007,-0.49632 -1.43474,-0.7509 -2.24406,-0.71891zM86,11.42859l65.36,51.00203v92.36937h-41.28v-65.36h-48.16v65.36h-41.28v-92.36937zM127.28,27.52h6.88v12.7589l-6.88,-5.375zM68.8,96.32h34.4v58.48h-34.4z">
+                      </path>
+                    </g>
+                  </g>
+                </svg>
+                <span class="listing">Apartment</span>
+              </label>
+            </a>
+            <a class="part-cont">
+              <input type="radio" value="hostel" id="property-type-hostel" style="opacity: 0; position: absolute;">
+              <label for="property-type-hostel" value="hostel">
+                <svg class="s" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                  viewBox="0 0 172 172">
+                  <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                    style="mix-blend-mode: normal">
+                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                    <g fill="#333333">
+                      <path
+                        d="M85.87906,3.44c-0.72811,0.02595 -1.42917,0.28238 -2.00219,0.73234l-79.12,61.92c-0.96771,0.7584 -1.45721,1.97553 -1.28407,3.19276c0.17315,1.21723 0.98263,2.24958 2.12344,2.70805c1.14081,0.45847 2.43956,0.27339 3.40688,-0.4855l6.09391,-4.77031h5.54297v-4.34031l65.36,-51.14984l65.36,51.14984v4.34031h5.54297l6.0939,4.77031c0.96733,0.75884 2.26605,0.94389 3.40682,0.48541c1.14077,-0.45847 1.95024,-1.4908 2.1234,-2.708c0.17316,-1.2172 -0.3163,-2.43431 -1.28396,-3.19273l-79.12,-61.92c-0.63824,-0.50113 -1.43308,-0.76052 -2.24406,-0.73234zM37.84,72.24v82.56h-7.24281v6.88h13.03438v-3.44h1.08844v-6.88h82.56v6.88h1.08844v3.44h13.03438v-6.88h-7.24281v-6.88v-3.44v-37.84v-3.44v-3.44v-27.52h-6.88v12.19453c-3.65943,-3.29048 -8.47787,-5.31453 -13.76,-5.31453h-27.52v20.64h-11.65703c2.8981,-2.52895 4.77703,-6.20188 4.77703,-10.32c0,-7.55869 -6.20131,-13.76 -13.76,-13.76c-7.55869,0 -13.76,6.20131 -13.76,13.76c0,4.11812 1.87893,7.79105 4.77703,10.32h-11.65703v-27.52zM13.76,73.24781v13.02094h6.88v-13.02094zM151.36,73.24781v13.01422h6.88v-13.01422zM65.36,82.56c3.84046,0 6.88,3.03954 6.88,6.88c0,3.84046 -3.03954,6.88 -6.88,6.88c-3.84046,0 -6.88,-3.03954 -6.88,-6.88c0,-3.84046 3.03954,-6.88 6.88,-6.88zM92.88,86h20.64c7.63809,0 13.76,6.12191 13.76,13.76h-34.4zM13.76,92.7725v13.02094h6.88v-13.02094zM151.36,92.7725v13.02094h6.88v-13.02094zM44.72,106.64h82.56v22.51453c-3.65943,-3.29048 -8.47787,-5.31453 -13.76,-5.31453h-27.52v20.64h-11.65703c2.8981,-2.52895 4.77703,-6.20188 4.77703,-10.32c0,-7.55869 -6.20131,-13.76 -13.76,-13.76c-7.55869,0 -13.76,6.20131 -13.76,13.76c0,4.11812 1.87893,7.79105 4.77703,10.32h-11.65703zM13.76,112.3039v13.02094h6.88v-13.02094zM151.36,112.3039v13.01422h6.88v-13.01422zM65.36,127.28c3.84046,0 6.88,3.03954 6.88,6.88c0,3.84046 -3.03954,6.88 -6.88,6.88c-3.84046,0 -6.88,-3.03954 -6.88,-6.88c0,-3.84046 3.03954,-6.88 6.88,-6.88zM92.88,130.72h20.64c7.63809,0 13.76,6.12191 13.76,13.76h-34.4zM151.36,131.8286v13.02094h6.88v-13.02094zM13.76,131.83531v13.01422h6.88v-13.01422zM13.76,151.36v6.88c0.00019,1.89978 1.54022,3.43981 3.44,3.44h6.88v-6.88h-3.44v-3.44zM151.36,151.36v3.44h-3.44v6.88h6.88c1.89978,-0.00019 3.43981,-1.54022 3.44,-3.44v-6.88zM50.14875,154.8v6.88h13.0411v-6.88zM69.70703,154.8v6.88h13.03437v-6.88zM89.2586,154.8v6.88h13.03437v-6.88zM108.81015,154.8v6.88h13.03438v-6.88z">
+                      </path>
+                    </g>
+                  </g>
+                </svg>
+                <span class="listing">Hostels</span>
+              </label>
+            </a>
+          </div>
+          <!-- <p>No JavaScript, Start scrolling</p> -->
+        </div>
+      </div>
+      <div class="section" id="srt">
+        <div class="fixed" style="top: 40% !important; padding-bottom: 100px;">
+          <div class="contain">
+            <!-- <div class="large">What kind of place are you listing</div> -->
+            <div style="margin-bottom: 8px;
+                position: relative;
+                top: 48px">
+              <div class="subb" style="padding-right: 10px;">How many total rooms does your property have?</div>
+            </div>
+          </div>
+          <div class="whole-cont" id="whc">
+            <a class="parts-cont">
+              <input type="radio" value="property_hostel_2_5" id="property-hostel-2_5"
+                style="opacity: 0; position: absolute;">
+              <label for="property-hostel-2_5">
+
+                <span class="listing">2-5</span>
+              </label>
+            </a>
+            <a class="parts-cont">
+              <input type="radio" value="property_hostel_6_10" id="property-hostel-6_10"
+                style="opacity: 0; position: absolute;">
+              <label for="property-hostel-6_10" value="hostel">
+                <span class="listing">6-10</span>
+              </label>
+            </a>
+            <a class="parts-cont">
+              <input type="radio" value="property_hostel_11_20" id="property-hostel-11_20"
+                style="opacity: 0; position: absolute;">
+              <label for="property-hostel-11_20" value="hostel">
+                <span class="listing">11-20</span>
+              </label>
+            </a>
+            <a class="parts-cont">
+              <input type="radio" value="property_hostel_21_30" id="property-hostel-21_30"
+                style="opacity: 0; position: absolute;">
+              <label for="property-hostel-21_30" value="hostel">
+                <span class="listing">21-30</span>
+              </label>
+            </a>
+            <a class="parts-cont">
+              <input type="radio" value="property_hostel_31_40" id="property-hostel-31_40"
+                style="opacity: 0; position: absolute;">
+              <label for="property-hostel-31_40" value="hostel">
+                <span class="listing">31-40</span>
+              </label>
+            </a>
+            <a class="parts-cont">
+              <input type="radio" value="property_hostel_41_50" id="property-hostel-41_50"
+                style="opacity: 0; position: absolute;">
+              <label for="property-hostel-41_50" value="hostel">
+                <span class="listing">41-50</span>
+              </label>
+            </a>
+            <a class="parts-cont">
+              <input type="radio" value="property_hostel_50_plus" id="property-hostel-50_plus"
+                style="opacity: 0; position: absolute;">
+              <label for="property-hostel-50_plus" value="hostel">
+                <span class="listing">50+</span>
+              </label>
+            </a>
+          </div>
+          <!-- <p>No JavaScript, Start scrolling</p> -->
+        </div>
+      </div>
+      <div class="section">
+        <div class="fixed" style="top: 31% !important; padding-bottom: 100px;">
+          <div class="contain">
+            <!-- <div class="large"></div> -->
+            <div style="margin-bottom: 8px;
+                position: relative;
+                top: 48px">
+              <div class="subb">How many guests can your place accomodate?</div>
+            </div>
+          </div>
+          <div class="whole-cont">
+            <a class="part-cont" style="padding: 0 !important; width: 100%;">
+              <input type="number" placeholder="e.g 6 guests" class="textbox">
+            </a>
+          </div>
+          <!-- <p>No JavaScript, Start scrolling</p> -->
+        </div>
+      </div>
+      <div class="section">
+        <div class="fixed" style="top: 40% !important; padding-bottom: 100px;">
+          <div class="contain">
+            <div class="large" style="color: #ece4e4 !important; text-align: left; position: relative;
+            top: 68px">Where’s your place located?</div>
+            <div style="margin-bottom: 8px;
+                    ">
+            </div>
+          </div>
+          <div class="whole-cont" style="flex-direction: column !important;">
+            <a class="part-cont part">
+              <label for="street">Street Address</label>
+              <input type="text" id="street" placeholder="House name/number" class="textbox">
+            </a>
+            <div style="display: flex;">
+              <a class="part-cont parts">
+                <label for="street">City</label>
+                <input type="text" id="city" class="textbox">
+              </a>
+              <a class="part-cont parts">
+                <label for="state">State</label>
+                <input type="text" id="state" class="textbox">
+              </a></div>
+            <a class="part-cont parts">
+              <label for="zip">Zip Code</label>
+              <input type="number" id="zip"
+                style="height: 100%; width: 100%; padding: 0 20px; font-family: poppinsr; font-size: 15px;border: 1px solid rgba(0, 0, 0, 0.1) !important;">
+            </a>
+
+          </div>
+          <!-- <p>No JavaScript, Start scrolling</p> -->
+        </div>
+      </div>
+      <div class="section">
+        <div class="fixed" style="top: 40% !important; padding-bottom: 100px;">
+          <div class="contain">
+            <div class="large" style="text-align: left;">Great progress, Malik!</div>
+            <div style="margin-bottom: 8px;
+                position: relative;
+                top: 48px">
+              <div class="subb" id="whc" style="text-transform: uppercase">Step 2</div>
+              <div class="subb" id="whc" style="top: 15px !important; font-size: 20px !important; color: #484848 !important;">Set the scene</div>
+              <div class="subb" id="whc"
+                style="top: 45px !important; font-family: poppinsr !important; font-weight: 400 !important; color: #2d2d2d !important;">Photos,
+                short description, title.</div>
+            </div>
+          </div>
+          <div class="whole-cont" id="whc" style="top: 65px !important;">
+            <a class="part-cont" style="background: #008489; width: fit-content !important;">
+              <label for="property-type-hostel" value="hostel">
+                <span class="list">Continue</span>
+              </label>
+            </a>
+          </div>
+          <!-- <p>No JavaScript, Start scrolling</p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

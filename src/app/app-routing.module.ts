@@ -13,6 +13,7 @@ import { UserSettingsComponent } from './pages/general/user-settings/user-settin
 import { PasswordSettingComponent } from './pages/general/password-setting/password-setting.component';
 import { HostHostelComponent } from './pages/general/host-hostel/host-hostel.component';
 import { HostApartmentComponent } from './pages/general/host-apartment/host-apartment.component';
+import { StayComponent } from './pages/general/stay/stay.component';
 
 
 // {path: '', component: GeneralComponent},
@@ -26,6 +27,7 @@ children: [
     {path: 'experience', component: ExperienceStartComponent},
     {path: 'hostel', component: HostHostelComponent},
     {path: 'apartment', component: HostApartmentComponent},
+    {path: 'room', component: StayComponent}
   ]},
   {path: 'auth', children: [
     {path: 'login', component: LoginComponent},
