@@ -1,0 +1,238 @@
+.smalll {
+  font-family: coco-regular;
+  font-weight: 500 !important;
+  letter-spacing: 2px !important;
+  color: rgb(27, 27, 27);
+  position: relative;
+  bottom: 12px;
+  font-size: 15px !important;
+}
+
+.cbuttton {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 18px 60px;
+  line-height: 12px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  text-align: center;
+  background-color: #e09e43;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+
+.convince-bunks {
+  font-family: coco-heavy !important;
+  font-size: 24px !important;
+  font-weight: 800 !important;
+  line-height: 1.25em !important;
+  color: rgb(72, 72, 72) !important;
+}
+
+.convince-bunk {
+  font-family: poppinsbold !important;
+  font-size: 50px !important;
+  line-height: 50px !important;
+  letter-spacing: -1.5px !important;
+  font-weight: 900 !important;
+  color: rgb(51, 51, 51) !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.convince-bunk span {
+  margin: 0px !important;
+  overflow-wrap: break-word !important;
+  font-size: 24px !important;
+  font-weight: 800 !important;
+  line-height: 1.25em !important;
+  color:
+    rgb(72, 72, 72) !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+
+}
+
+.margin-fix span {
+  position: relative !important;
+  top: 6px !important;
+  font-size: 23px;
+}
+
+.p {
+  overflow-wrap: break-word !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  line-height: 1.75em !important;
+  color: rgb(72, 72, 72) !important;
+  font-family: poppinsr;
+}
+
+.payment {
+  padding: 0 10px;
+  position: relative;
+  bottom: 30px;
+}
+
+.accordionn {
+  background: #f9f9f9 !important;
+  position: relative;
+  bottom: 220px;
+  padding-bottom: 100px;
+}
+
+.faq {
+  text-align: left;
+  padding: 20px 20px;
+}
+
+.faq a {
+  color: rgb(43, 122, 113) !important;
+  font-size: 16px !important;
+  font-family: poppinsr;
+  font-weight: 300;
+  text-align: left;
+}
+
+.faq a:focus {
+  color: #ffffff !important;
+}
+
+.more-faqs {
+  bottom: 120px;
+  position: relative;
+  font-family: poppinsbold;
+  color: #fff;
+  font-size: 25px;
+}
+
+.ull {
+  padding: 0;
+}
+
+.ull li {
+  color: rgb(131, 127, 127) !important;
+  /* font-family: coco-regular; */
+}
+
+.t-left-align {
+  text-align: left;
+}
+
+.text-white {
+  color: #f3eeee !important;
+}
+
+.hosting {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dark-continue {
+  position: relative;
+  top: 150px;
+}
+
+.wrap {
+  padding-right: 25px;
+}
+
+.img-top {
+  width: 100%;
+}
+
+.cl-cont {
+  vertical-align: middle !important;
+}
+
+.hosti {
+  font-weight: 900 !important;
+  font-family: poppinsbold !important;
+  color: #2b303a;
+  font-size: 60px;
+}
+
+@media (max-width: 374px) {
+  .convince-bunks {
+    font-size: 23px !important;
+  }
+
+  .convince-bunk {
+    font-size: 31px !important;
+    line-height: 31px !important;
+  }
+
+  .smalll {
+    font-size: 13px !important;
+  }
+
+  .hosti {
+    font-size: 25px !important;
+  }
+
+  .cl-cont {
+    top: 200px !important;
+  }
+}
+
+@media(max-width: 479px) {
+
+
+  .brr {
+    display: none;
+  }
+
+  .hosti {
+    font-size: 35px;
+  }
+
+  .convince-bunk {
+    font-size: 40px !important;
+    line-height: 40px !important;
+  }
+
+  .inn {
+    padding: 0 !important;
+  }
+
+  .wrap {
+    padding-right: 0px !important;
+  }
+
+  .hosting {
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+
+  .more-faqs {
+    padding: 0 50px;
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .img-top {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    top: 60px;
+    left: 40px;
+  }
+
+  .cl-cont {
+    vertical-align: bottom;
+    position: relative;
+    right: 50px;
+    top: 210px;
+  }
+}

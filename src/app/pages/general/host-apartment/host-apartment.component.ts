@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import {AppService} from '../../../services/app.service';
 import { scrollTop } from 'src/app/utils/scroll-to-top';
+import { AppService } from 'src/app/services/app.service';
 
 @Component({
-  selector: 'app-experience-start',
-  templateUrl: './experience-start.component.html',
-  styleUrls: ['./experience-start.component.css']
+  selector: 'app-host-apartment',
+  templateUrl: './host-apartment.component.html',
+  styleUrls: ['./host-apartment.component.css']
 })
-export class ExperienceStartComponent implements OnInit {
+export class HostApartmentComponent implements OnInit {
 
   constructor(
     private appService: AppService
@@ -21,7 +21,7 @@ export class ExperienceStartComponent implements OnInit {
     './assets/js/ext/plugins.js',
     './assets/js/ext/scripts.js',
   ];
-
+  
   ngOnInit() {
   }
 

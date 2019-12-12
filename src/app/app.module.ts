@@ -23,6 +23,8 @@ import { ForgotComponent } from './pages/auth/forgot/forgot.component';
 import { LandlordPortfolioComponent } from './pages/general/landlord-portfolio/landlord-portfolio.component';
 import { UserSettingsComponent } from './pages/general/user-settings/user-settings.component';
 import { PasswordSettingComponent } from './pages/general/password-setting/password-setting.component';
+import { HostHostelComponent } from './pages/general/host-hostel/host-hostel.component';
+import { HostApartmentComponent } from './pages/general/host-apartment/host-apartment.component';
 
 const firebaseUiAuthConfig: firebaseui.auth.Config = {
   signInFlow: 'popup',
@@ -67,6 +69,8 @@ const firebaseUiAuthConfig: firebaseui.auth.Config = {
     LandlordPortfolioComponent,
     UserSettingsComponent,
     PasswordSettingComponent,
+    HostHostelComponent,
+    HostApartmentComponent,
   ],
   imports: [
     BrowserModule,

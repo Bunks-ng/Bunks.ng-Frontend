@@ -11,6 +11,8 @@ import { SignupComponent } from './pages/auth/signup/signup.component';
 import { LandlordPortfolioComponent } from './pages/general/landlord-portfolio/landlord-portfolio.component';
 import { UserSettingsComponent } from './pages/general/user-settings/user-settings.component';
 import { PasswordSettingComponent } from './pages/general/password-setting/password-setting.component';
+import { HostHostelComponent } from './pages/general/host-hostel/host-hostel.component';
+import { HostApartmentComponent } from './pages/general/host-apartment/host-apartment.component';
 
 
 // {path: '', component: GeneralComponent},
@@ -20,7 +22,11 @@ children: [
   {path: '', component: LandingComponent},
   {path: 'spaces', component: ApartmentSpacesComponent},
   {path: 'space-details', component: ApartmentDetailsComponent},
-  {path: 'host-experience', component: ExperienceStartComponent},
+  {path: 'become-a-host', children: [
+    {path: 'experience', component: ExperienceStartComponent},
+    {path: 'hostel', component: HostHostelComponent},
+    {path: 'apartment', component: HostApartmentComponent},
+  ]},
   {path: 'auth', children: [
     {path: 'login', component: LoginComponent},
     {path: 'signup', component: SignupComponent},
