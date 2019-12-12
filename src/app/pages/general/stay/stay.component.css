@@ -345,14 +345,6 @@ footer {
   left: 10px;
 }
 
-/* .large {
-  font-family: poppinsbold !important;
-  font-size: 22px;
-  left: 10px;
-  position: relative;
-  padding-right: 5px;
-} */
-
 .contain {
   border-bottom: 0px !important;
   padding-top: 32px !important;
@@ -375,9 +367,6 @@ footer {
   fill: #333;
   top: 4px;
   position: relative;
-  /* position: absolute; */
-  /* top: 50px; */
-  /* left: 70px; */
 }
 
 .button-back svg {
