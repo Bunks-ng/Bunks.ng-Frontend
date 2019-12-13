@@ -26,6 +26,7 @@ import { PasswordSettingComponent } from './pages/general/password-setting/passw
 import { HostHostelComponent } from './pages/general/host-hostel/host-hostel.component';
 import { HostApartmentComponent } from './pages/general/host-apartment/host-apartment.component';
 import { StayComponent } from './pages/general/stay/stay.component';
+import { StayPictureComponent } from './pages/general/stay-picture/stay-picture.component';
 
 const firebaseUiAuthConfig: firebaseui.auth.Config = {
   signInFlow: 'popup',
@@ -73,6 +74,7 @@ const firebaseUiAuthConfig: firebaseui.auth.Config = {
     HostHostelComponent,
     HostApartmentComponent,
     StayComponent,
+    StayPictureComponent,
   ],
   imports: [
     BrowserModule,

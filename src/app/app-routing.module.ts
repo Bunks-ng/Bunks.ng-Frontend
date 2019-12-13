@@ -14,6 +14,7 @@ import { PasswordSettingComponent } from './pages/general/password-setting/passw
 import { HostHostelComponent } from './pages/general/host-hostel/host-hostel.component';
 import { HostApartmentComponent } from './pages/general/host-apartment/host-apartment.component';
 import { StayComponent } from './pages/general/stay/stay.component';
+import { StayPictureComponent } from './pages/general/stay-picture/stay-picture.component';
 
 
 // {path: '', component: GeneralComponent},
@@ -27,7 +28,8 @@ children: [
     {path: 'experience', component: ExperienceStartComponent},
     {path: 'hostel', component: HostHostelComponent},
     {path: 'apartment', component: HostApartmentComponent},
-    {path: 'room', component: StayComponent}
+    {path: 'room', component: StayComponent},
+    {path: 'photos', component: StayPictureComponent}
   ]},
   {path: 'auth', children: [
     {path: 'login', component: LoginComponent},
