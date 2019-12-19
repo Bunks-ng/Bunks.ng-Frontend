@@ -17,9 +17,11 @@ export class ExperienceStartComponent implements OnInit {
   }
 
   scripts = [
-    './assets/js/jquery/jquery.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js',
+    './assets/js/ext/parallax.min.js',
     './assets/js/ext/plugins.js',
     './assets/js/ext/scripts.js',
+    './assets/js/ext/script.js'
   ];
 
   ngOnInit() {

@@ -8,27 +8,27 @@ import { scrollTop } from 'src/app/utils/scroll-to-top';
   styleUrls: ['./stay.component.css']
 })
 export class StayComponent implements OnInit {
-
-  constructor(
-    private appService: AppService
-  ) { 
+  constructor(private appService: AppService) {
     this.appService.loadScriptPage(this.scripts);
+    this.appService.loadSome();
     scrollTop();
   }
 
   scripts = [
     './assets/js/jquery/jquery.js',
+    './assets/js/dist/bootstrap.min.js',
+    './assets/js/jquery/jquery.easing.min.js',
     './assets/js/ext/plugins.js',
     './assets/js/ext/scripts.js',
+    './assets/js/ext/multiform.js',
     '/assets/js/ext/progress.js'
   ];
-  
+
   public navigateToSection(section: string) {
     window.location.hash = '';
     window.location.hash = section;
 }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

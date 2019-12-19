@@ -1,140 +1,85 @@
-<div id="main">
-  <div id="main-content" class="hidden">
-    <div class="abss">
-      <div class="abs">
-        <button class="clapat-button button-back"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20"
-            height="20" viewBox="0 0 172 172" style=" fill:#000000;">
-            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-              stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-              font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-              <path d="M0,172v-172h172v172z" fill="none"></path>
-              <g fill="#333333">
-                <path
-                  d="M120.33281,13.73313c-0.90031,0.01344 -1.74688,0.38969 -2.365,1.03469l-68.8,68.8c-1.34375,1.34375 -1.34375,3.52062 0,4.86437l68.8,68.8c0.86,0.90031 2.15,1.26313 3.34594,0.94063c1.20938,-0.30906 2.15,-1.24969 2.45906,-2.45906c0.3225,-1.19594 -0.04031,-2.48594 -0.94063,-3.34594l-66.36781,-66.36781l66.36781,-66.36781c1.02125,-0.99437 1.31688,-2.49937 0.76594,-3.80281c-0.55094,-1.31688 -1.84094,-2.15 -3.26531,-2.09625z">
-                </path>
-              </g>
-            </g>
-          </svg> <span class="backo">Back</span>
-        </button>
-        <button class="clapat-button bu" (click)="navigateToSection('srt')">Next</button>
-      </div>
-    </div>
-    <div class="progress">
-      <div class="progress__level"></div>
-    </div>
-    <div class="po">
-      <div class="section">
-        <!-- <div class="oop"></div> -->
-        <div class="fixed" style="top: 50% !important; padding-bottom: 100px;">
-          <div class="contain">
-            <div class="large">Add photos to your listing</div>
-            <div style="margin-bottom: 8px;
-                  position: relative;
-                  top: 48px">
-              <div class="subb">Photos help guests imagine staying in your place. You can start with one and add more
-                after you publish.</div>
-            </div>
-          </div>
-          <div class="container">
+<div class="row">
+  <div class="col-md-6 left">
+    <form id="msform">
+      <!-- progressbar -->
+      <ul id="progressbar">
+        <li class="active">Upload Photos</li>
+        <li>Apartment Name</li>
+        <li>Price your space</li>
+      </ul>
+      <!-- fieldsets -->
+      <fieldset class="arrange">
+        <h2 class="fs-title">Add photos to your listing</h2>
+        <h3 class="fs-subtitle subtitle">Photos help guests imagine staying in your place. You can start with one and
+          add more
+          after you publish.
+        </h3>
+        <div class="row">
+          <div class="col-md-6" style="position:relative; width: 100%">
             <form action="">
-              <!-- upload photos -->
-              <input type="file" class="upload" multiple id="photo-image" tabindex="-1">
-              <label for="photo-image" class="photo-label" tabindex="0" role="group"
-                accept="image/jpg, image/jpeg, image/png, image/gif">
-                <div class="ins-label">
-                  <div class="inside-label" style="background: url('./assets/img/upphoto.png')">
-                    <div class="labell">
-                      <div class="_36rlri" style="margin-left: 8px; margin-right: 8px;"><button type="button"
-                          class="_1xxtzdm4">
-                          <div class="_1p3zm55">
-                            <div style="margin-right: 16px;"><svg viewBox="0 0 24 24" role="presentation"
-                                aria-hidden="true" focusable="false"
-                                style="height: 18px; width: 18px; fill: currentcolor;">
-                                <path
-                                  d="m24 14.5c0 3.12-2.55 5.5-5.5 5.5h-4a .5.5 0 0 1 0-1h4c2.41 0 4.5-1.95 4.5-4.5 0-1.17-.41-2.08-1.1-2.77a3.98 3.98 0 0 0 -.76-.6 2.54 2.54 0 0 0 -.32-.17l-.31-.13v-.33c0-3.95-2.96-6.5-7-6.5-1.62 0-3.01.61-4.17 1.63-.41.36-.76.75-1.06 1.13-.17.23-.29.4-.34.49l-.28.49-.46-.34a2.83 2.83 0 0 0 -.5-.28c-.96-.43-1.95-.43-2.9.28-.45.34-.74.74-.9 1.21-.2.59-.19 1.24-.04 1.86.04.17.08.29.1.35l.17.43-.41.21c-.2.1-.52.33-.85.7-.54.6-.87 1.38-.87 2.34 0 2.83 1.91 4.5 5.5 4.5h2a .5.5 0 1 1 0 1h-2c-4.12 0-6.5-2.08-6.5-5.5 0-1.22.42-2.23 1.13-3.02.27-.31.54-.53.78-.7-.01-.03-.01-.05-.02-.08-.19-.79-.21-1.62.06-2.42a3.5 3.5 0 0 1 1.25-1.68c1.28-.96 2.65-.96 3.91-.39.09.04.16.08.23.12.04-.06.08-.11.13-.18.33-.44.73-.87 1.19-1.28 1.35-1.16 2.96-1.87 4.84-1.87 4.45 0 7.82 2.83 7.98 7.18.33.18.73.45 1.12.85.87.87 1.4 2.03 1.4 3.48zm-9.15-.65a.5.5 0 0 0 0-.71l-2.96-2.96a.56.56 0 0 0 -.79 0l-2.96 2.96a.5.5 0 1 0 .71.71l2.15-2.14v11.79a.5.5 0 0 0 1 0v-11.79l2.15 2.15a.5.5 0 0 0 .71 0z"
-                                  fill-rule="evenodd"></path>
-                              </svg></div>
-                            <div class="_15o3ptx2">Upload Photos</div>
-                          </div>
-                        </button></div>
-                      <div class="_1d5136v" role="button">
-                        <div class="_siasx51">or drag them in</div>
-                      </div>
+              <!--              <input type="file" class="upload" multiple id="photo-image" tabindex="-1">-->
+              <!--              <label for="photo-image"></label>-->
+              <article>
+                <label for='files' class="label_image">
+                  <div style="background: url('../../../../assets/img/upphoto.png');" class="inside_label">
+                    <div style="display: inline-flex; flex-direction: column">
+                      <div class="upload">Upload Photos</div>
+                      <span class="uplab">or drag them in</span>
                     </div>
+                    <div id='result'></div>
                   </div>
-                </div>
-              </label>
+                </label>
+                <input id='files' type='file' multiple style="display: none;"/>
+                <!--                <button type='button' id='clear'>Clear</button>-->
+
+              </article>
             </form>
           </div>
-          <!-- <p>No JavaScript, Start scrolling</p> -->
         </div>
-      </div>
-      <div class="section">
-        <!-- <div class="oop"></div> -->
-        <div class="fixed" style="top: 50% !important; padding-bottom: 100px;">
-          <div class="contain">
-            <div class="large">Describe your place to guests</div>
-            <div style="margin-bottom: 8px;
-                      position: relative;
-                      top: 68px">
-              <div class="subb">Write a quick summary of your place. You can highlight what’s special about your space,
-                the neighborhood, and how you’ll interact with guests</div>
-            </div>
-          </div>
-          <div class="container" style="top: 65px !important;">
-            <form action="">
-              <!-- upload photos -->
-              <textarea class="txtarea" name="apartment_detail" id="apartment_detail" cols="150" rows="60"></textarea>
-            </form>
-          </div>
-          <!-- <p>No JavaScript, Start scrolling</p> -->
+        <input type="button" name="next" class="next action-button mafo" value="Next"
+               style="margin-top: 30px !important;"/>
+      </fieldset>
+      <fieldset class="arrange">
+        <h2 class="fs-title">Name your place</h2>
+        <h3 class="fs-subtitle subtitle sub" style="top: 0 !important;margin-bottom: 10px !important;">Attract guests
+          with a
+          listing title that highlights what makes your place special.</h3>
+        <input type="text" id="apartment_name" name="apartment_name" style="font-size: 17px; margin-top: 15px"
+               placeholder="Listing title"/>
+        <hr style="position:relative;top: 10px">
+        <h2 class="fs-title" style="margin-top: 35px;">Describe your place to guests</h2>
+        <h3 class="fs-subtitle subtitle sub">Write a quick summary
+          of your place. You can highlight what’s special about your space, the neighborhood, and how you’ll interact
+          with guests.</h3>
+        <textarea cols="100" rows="50" type="text" id="apartment_summary" name="apartment_name"
+                  style="font-size: 17px; margin-top: 15px; height: 100px"
+                  placeholder="Describe the decor, lights, what's nearby etc..."></textarea>
+        <input type="button" name="previous" class="previous action-button-previous other_button" value="Previous"/>
+        <input type="button" name="next" class="next action-button other_button" value="Almost there!"/>
+      </fieldset>
+      <fieldset class="arrange">
+        <h2 class="fs-title">Price Your Space</h2>
+        <h3 class="fs-subtitle subtitle sub" style="top: 0 !important;margin-bottom: 10px !important;">Increase your
+          chances of getting booked</h3>
+        <div style="position:relative;">
+          <div id="naira">₦</div>
+          <input type="text" id="pricing" name="apartment_name"
+                 style="font-size: 17px; margin-top: 15px; padding: 15px 40px !important;"
+                 placeholder="Listing title"/>
         </div>
-      </div>
-      <div class="section">
-        <!-- <div class="oop"></div> -->
-        <div class="fixed" style="top: 30% !important; padding-bottom: 100px;">
-          <div class="contain">
-            <div class="large">Name your place</div>
-            <div style="margin-bottom: 8px;
-                          position: relative;
-                          top: 68px">
-              <div class="subb">Attract guests with a listing title that highlights what makes your place special.</div>
-            </div>
-          </div>
-          <div class="container" style="top: 65px !important;">
-            <form action="">
-              <!-- upload photos -->
-              <input type="text" style="padding: 15px 10px; width: 80%; background: #ffffff !important; float: left;"
-                placeholder="Listing title">
-            </form>
-          </div>
-          <!-- <p>No JavaScript, Start scrolling</p> -->
-        </div>
-      </div>
-      <div class="section">
-        <div class="fixed" style="top: 40% !important; padding-bottom: 100px;">
-          <div class="contain">
-            <div class="large" style="text-align: left;">All done, Malik!</div>
-            <div style="margin-bottom: 8px;
-                    position: relative;
-                    top: 68px">
-              <div class="subb" id="whc" style="text-transform: uppercase; padding-right: 10px;">Welcome to Bunks</div>
-              <div class="subb" id="whc"
-                style="top: 15px !important; font-size: 20px !important; color: #484848 !important;"></div>
-              
-            </div>
-          </div>
-          <div class="whole-cont" id="whc" style="top: 75px !important; position: relative;">
-            <a routerLink="/become-a-host/photos" class="part-cont"
-              style="background: #008489; width: fit-content !important;">
-              <label for="property-type-hostel" value="hostel">
-                <span class="list" style="color: #fff !important;">Finish</span>
-              </label>
-            </a>
-          </div>
-          <!-- <p>No JavaScript, Start scrolling</p> -->
-        </div>
-      </div>
-    </div>
+        <hr style="position:relative;top: 10px">
+        <input type="button" name="previous" class="previous action-button-previous other_button" value="Previous"/>
+        <input type="button" name="next" class="next action-button other_button" value="Almost there!!"/>
+      </fieldset>
+      <fieldset class="arrange">
+        <h2 class="fs-title">Welcome Malik!</h2>
+        <span class="steps">Your apartment is ready to publish!</span>
+        <h3 class="fs-subtitle">You’ll be able to welcome your first guest starting February. If you’d like to
+          update your calendar or house rules, you can easily do all that after you hit publish.</h3>
+        <input type="button" name="previous" class="previous action-button-previous mafoo" value="Previous"/>
+        <a class="clapat-button algn" style="padding: 20px; text-decoration: none" routerLink="/become-a-host/photos">Finish</a>
+      </fieldset>
+
+    </form>
   </div>
 </div>

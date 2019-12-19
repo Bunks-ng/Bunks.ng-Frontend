@@ -11,7 +11,7 @@ export class PasswordSettingComponent implements OnInit {
 
   constructor(
     private appService: AppService
-  ) { 
+  ) {
     this.appService.loadScriptPage(this.scripts);
     scrollTop();
   }
@@ -21,7 +21,7 @@ export class PasswordSettingComponent implements OnInit {
     './assets/js/ext/plugins.js',
     './assets/js/ext/scripts.js',
   ];
-  
+
   ngOnInit() {
   }
 }

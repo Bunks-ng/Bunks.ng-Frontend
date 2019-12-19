@@ -108,7 +108,7 @@
 }
 
 .more-faqs {
-  bottom: 120px;
+  bottom: 50px;
   position: relative;
   font-family: poppinsbold;
   color: #fff;
@@ -141,7 +141,7 @@
 
 .dark-continue {
   position: relative;
-  top: 150px;
+  margin-top: 150px;
 }
 
 .wrap {
@@ -198,12 +198,12 @@
   }
 
   .convince-bunk {
-    font-size: 40px !important;
+    font-size: 33px !important;
     line-height: 40px !important;
+    text-align: left;
   }
 
   .inn {
-    padding: 0 !important;
   }
 
   .wrap {

@@ -178,4 +178,8 @@ header {
     -ms-transform: translateX(0px);
     transform: translateX(0px);
   }
+
+  .upl {
+    margin-top: -20px;
+  }
 }
