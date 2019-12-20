@@ -18,10 +18,10 @@ export class HeaderComponent implements OnInit {
     providerData: null
   };
 
-  private user: object;
-  private firstName: string;
-  private email: string;
-  private photoURL: string;
+  public user: object;
+  public firstName: string;
+  public email: string;
+  public photoURL: string;
 
   constructor() { }
 

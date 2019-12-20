@@ -1,11 +1,6 @@
 import { firebase, firebaseui } from 'firebaseui-angular';
 
 export const firebaseUiAuthConfig: firebaseui.auth.Config = {
-  callbacks: {
-    signInSuccessWithAuthResult: function(authResult, redirectUrl) {
-      return true;
-    }
-  },
   signInFlow: 'popup',
   signInSuccessUrl: '/',
   signInOptions: [
