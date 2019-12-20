@@ -1,0 +1,4 @@
+<div style="display: flex; justify-content: space-between;">
+  <button *ngIf="!user" routerLink="/auth/sign-in" class="auth-button">Sign in</button>
+  <button *ngIf="user" class="auth-button" (click)="signOut()">Sign out</button>
+</div>

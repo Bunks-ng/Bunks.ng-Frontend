@@ -12,8 +12,7 @@
       <div id="header-title-div" style="">
         <div id="header-title" style="">BUNKERS Menu</div>
       </div>
-      <!-- routerLink = "/auth/login" -->
-      <div class="hamburger-user" style="background: url('./assets/img/default-user.jpg')"></div>
+      <div class="hamburger-user" [ngStyle]="{ background: 'url(' + photoURL + ')' }"></div>
       <!-- Menu Button -->
       <!-- <button class="hamburger hamburger-rotate hidden">
         <span>toggle menu</span>
@@ -30,7 +29,7 @@
         <div style="" class="upl">
           <div id="close-menu"></div>
           <div class="grouping-menu">
-            <span>Hi Malik</span>
+            <span>Hi {{ firstName }}!</span>
             <span class="span2">Show Profile</span>
           </div>
           <div class="grouping-menu"
@@ -102,13 +101,7 @@
           </div>
           <div class="grouping-menu"
             style="margin-top: 30px; padding-bottom: 18px;">
-            <div style="display: flex; justify-content: space-between;">
-                <a routerLink="/auth/login" class="auth-button animation-link menu-link">Log in</a>
-                <a routerLink="/auth/signup" class="auth-button animation-link menu-link">Sign up</a>
-            </div>
-            <div style="display: flex; justify-content: space-between;">
-                <a class="auth-button animation-link menu-link">Log out</a>
-            </div>
+            <app-auth-button [user]="user"></app-auth-button>
           </div>
         </div>
 
@@ -121,7 +114,7 @@
         <div style="" class="upl">
           <div id="close-menu"></div>
           <div class="grouping-menu">
-            <span>Hi Malik</span>
+            <span>Hi {{ firstName }}!</span>
             <a class="span2">Show Profile</a>
           </div>
           <div class="grouping-menu"
