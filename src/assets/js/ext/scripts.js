@@ -225,27 +225,25 @@ jQuery(function ($) {
   ---------------------------------------------------*/
 
   function OpenHeader() {
-
-
-    $(".hamburger-user, #black-fade").on('click', function () {
-      $(".hamburger-user").toggleClass("is-active");
-      $("header").toggleClass("is-active");
-      $("#menu-overlayt").toggleClass("is-active");
-      $("#black-fade").toggleClass("is-active");
-      $("#header-title-div").toggleClass("is-active");
-      $('#black-fade').removeClass("hover");
-      $("#project_close").toggleClass("disabled");
-    });
-
-    $("#logo, #black-fade").on('click', function () {
-        $("#logo ").toggleClass("is-active");
-        $("header").toggleClass("is-active");
-        $("#menu-overlay").toggleClass("is-active");
-        $("#black-fade").toggleClass("is-active");
-        $("#header-title-div").toggleClass("is-active");
-        $('#black-fade').removeClass("hover");
-        $("#project_close").toggleClass("disabled");
-    });
+    // $(".hamburger-user, #black-fade").on('click', function () {
+    //   $(".hamburger-user").toggleClass("is-active");
+    //   $("header").toggleClass("is-active");
+    //   $("#menu-overlayt").toggleClass("is-active");
+    //   $("#black-fade").toggleClass("is-active");
+    //   $("#header-title-div").toggleClass("is-active");
+    //   $('#black-fade').removeClass("hover");
+    //   $("#project_close").toggleClass("disabled");
+    // });
+    //
+    // $("#logo, #black-fade").on('click', function () {
+    //     $("#logo ").toggleClass("is-active");
+    //     $("header").toggleClass("is-active");
+    //     $("#menu-overlay").toggleClass("is-active");
+    //     $("#black-fade").toggleClass("is-active");
+    //     $("#header-title-div").toggleClass("is-active");
+    //     $('#black-fade').removeClass("hover");
+    //     $("#project_close").toggleClass("disabled");
+    // });
 
     $(".header_menu").mouseleave(function () {
       $("#logo, .hamburger-user ").removeClass("is-active");
@@ -328,7 +326,7 @@ jQuery(function ($) {
     });
 
 
-  } //End Open Header	
+  } //End Open Header
 
 
 
@@ -745,7 +743,7 @@ jQuery(function ($) {
 
 
 
-  } //End PagePillingSlider			
+  } //End PagePillingSlider
 
 
 
@@ -781,8 +779,8 @@ jQuery(function ($) {
   function Carousel() {
 
     if( $('.experience-carousel').length > 0 ){
-            
-      $(".experience-carousel").owlCarousel({	
+
+      $(".experience-carousel").owlCarousel({
           loop:false,
           margin:120,
           autoplay: false,
@@ -794,7 +792,7 @@ jQuery(function ($) {
               },
               600:{
                   items:2
-              },            
+              },
               960:{
                   items:4
               },
@@ -805,9 +803,9 @@ jQuery(function ($) {
                   items:6
               }
           }
-          
+
       });
-    
+
   }
 
   if ($('.text-carousel').length > 0) {
@@ -822,8 +820,8 @@ jQuery(function ($) {
   }
 
     if( $('.clients-carousel').length > 0 ){
-            
-        $(".clients-carousel").owlCarousel({	
+
+        $(".clients-carousel").owlCarousel({
             loop:false,
             margin:300,
             autoplay: false,
@@ -835,7 +833,7 @@ jQuery(function ($) {
                 },
                 600:{
                     items:2
-                },            
+                },
                 960:{
                     items:4
                 },
@@ -846,9 +844,9 @@ jQuery(function ($) {
                     items:6
                 }
             }
-            
+
         });
-      
+
     }
 
     if ($('.text-carousel').length > 0) {
@@ -1373,7 +1371,7 @@ jQuery(function ($) {
 
     }
 
-  } //End MasonryPortfolio	
+  } //End MasonryPortfolio
 
 
   /*--------------------------------------------------
@@ -1398,7 +1396,7 @@ jQuery(function ($) {
               '<div class="mfp-counter"></div>' +
               '</div>', // Popup HTML markup. `.mfp-img` div will be replaced with img tag, `.mfp-close` by close button
 
-            cursor: 'mfp-zoom-out-cur', // Class that adds zoom cursor, will be added to body. Set to null to disable zoom out cursor. 
+            cursor: 'mfp-zoom-out-cur', // Class that adds zoom cursor, will be added to body. Set to null to disable zoom out cursor.
 
             titleSrc: 'title', // Attribute of the target element that contains caption for the slide.
             // Or the function that should return the title. For example:
@@ -1435,7 +1433,7 @@ jQuery(function ($) {
       });
     }
 
-  } //End MagnificPopup	
+  } //End MagnificPopup
 
 
 
@@ -1455,7 +1453,7 @@ jQuery(function ($) {
     }
 
 
-    //Progress bar animations	
+    //Progress bar animations
     $('.progress-bar li').each(function (i) {
       $(this).appear(function () {
         var percent = $(this).find('span').attr('data-width');
@@ -1481,7 +1479,7 @@ jQuery(function ($) {
     });
 
 
-    // Accordion	  
+    // Accordion
     $('dl.accordion dt').filter(':first-child').addClass('accordion-active');
     $('dd.accordion-content').filter(':nth-child(n+3)').slideUp(1).addClass('hide');
     $('dl.accordion').on('click', 'dt', function () {
@@ -1492,7 +1490,7 @@ jQuery(function ($) {
     });
 
 
-    // Toggle	
+    // Toggle
     $(".toggle_container").hide();
     $("span.toggle-title").on('click', function () {
       $(this).toggleClass("toggle-active").next().slideToggle("normal");
@@ -1500,7 +1498,7 @@ jQuery(function ($) {
     });
 
 
-    // Tabs	
+    // Tabs
     $(".tab_container").hide();
     $("ul.tabs li:first").addClass("tab-active").show();
     $(".tab_container:first").show();
@@ -1542,7 +1540,7 @@ jQuery(function ($) {
       });
     }
 
-    // Radial Counters	
+    // Radial Counters
     if (jQuery('.radial-counter').length > 0) {
       $(".knob").knob({
         width: 140,

@@ -3,7 +3,7 @@
   <header class="hidden">
     <div id="header-container">
       <!-- Logo -->
-      <div id="logo">
+      <div (click)="toggleMenu()" id="logo" class="">
         <a>
           <img src="./assets/img/Group 19.png" alt="Logo" />
         </a>
@@ -12,12 +12,7 @@
       <div id="header-title-div" style="">
         <div id="header-title" style="">BUNKERS Menu</div>
       </div>
-      <div class="hamburger-user" [ngStyle]="{ background: 'url(' + photoURL + ')' }"></div>
-      <!-- Menu Button -->
-      <!-- <button class="hamburger hamburger-rotate hidden">
-        <span>toggle menu</span>
-      </button> -->
-      <!-- /Menu Button -->
+      <div (click)="toggleUserMenu()" class="hamburger-user" [ngStyle]="{ background: 'url(' + photoURL + ')' }"></div>
     </div>
   </header>
   <!-- /Header -->
@@ -34,7 +29,7 @@
           </div>
           <div class="grouping-menu"
             style="margin-top: 30px; padding-bottom: 18px; border-bottom: 1px solid #EBEBEB !important;">
-            <a class="grouping-m animation-link menu-link" [routerLink]="'/'">
+            <a class="grouping-m" (click)="removeMenu()" [routerLink]="'/'">
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 172 172"
                 style="margin-right: 10px; fill:#000000;">
                 <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -50,7 +45,7 @@
                 </g>
               </svg> <span>Home</span>
             </a>
-            <a [routerLink]="'/spaces'" class="grouping-m animation-link menu-link">
+            <a [routerLink]="'/spaces'" (click)="removeMenu()" class="grouping-m">
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="22" viewBox="0 0 172 172"
                 style=" fill:#000000;">
                 <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -66,7 +61,7 @@
                 </g>
               </svg> <span>View Apartments</span>
             </a>
-            <a [routerLink]="'/spaces'" class="grouping-m animation-link menu-link">
+            <a [routerLink]="'/spaces'" class="grouping-m" (click)="removeMenu()">
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 172 172"
                 style=" fill:#000000;">
                 <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -86,22 +81,19 @@
           <div class="grouping-menu"
             style="margin-top: 30px; padding-bottom: 18px; border-bottom: 1px solid #EBEBEB !important;">
             <span class="smaller titl">Hosting</span>
-            <a [routerLink]="'/become-a-host/experience'" class="grouping-m under-host animation-link menu-link">
-              <img src="https://img.icons8.com/cute-clipart/64/000000/accessibility2.png" width="20" height="20">
+<!--            animation-link menu-link-->
+            <a [routerLink]="'/become-a-host/experience'" (click)="removeMenu()" class="grouping-m under-host ">
+              <img src="https://img.icons8.com/cute-clipart/64/000000/accessibility2.png" width="20" style="height: 20px !important;" height="20">
               <span>Host an experience</span>
             </a>
-            <a [routerLink]="'/become-a-host/apartment'" class="grouping-m under-host animation-link menu-link">
-              <img src="https://img.icons8.com/doodle/48/000000/company--v1.png" width="20" height="20"> <span>Host a
+            <a [routerLink]="'/become-a-host/apartment'" (click)="removeMenu()" class="grouping-m under-host">
+              <img src="https://img.icons8.com/doodle/48/000000/company--v1.png" width="20" height="20" style="height: 20px !important;"> <span>Host a
                 shared apartment</span>
             </a>
-            <a routerLink="/become-a-host/hostel" class="grouping-m under-host animation-link menu-link">
-              <img src="https://img.icons8.com/dusk/64/000000/3-star-hotel.png" width="20" height="20"> <span>Host a
+            <a routerLink="/become-a-host/hostel" (click)="removeMenu()" class="grouping-m under-host">
+              <img src="https://img.icons8.com/dusk/64/000000/3-star-hotel.png" width="20" height="20" style="height: 20px !important;"> <span>Host a
                 hostel</span>
             </a>
-          </div>
-          <div class="grouping-menu"
-            style="margin-top: 30px; padding-bottom: 18px;">
-            <app-auth-button [user]="user"></app-auth-button>
           </div>
         </div>
 
@@ -119,7 +111,7 @@
           </div>
           <div class="grouping-menu"
             style="margin-top: 30px; padding-bottom: 18px; border-bottom: 1px solid #EBEBEB !important;">
-            <a class="grouping-m animation-link menu-link" href="/host-portfolio">
+            <a class="grouping-m" (click)="removeUserMenu()" routerLink="/host-portfolio">
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 172 172"
                 style=" fill:#000000;">
                 <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -135,7 +127,7 @@
                 </g>
               </svg> <span>Personal info</span>
             </a>
-            <a routerLink="/landlord/update-profile" class="grouping-m animation-link menu-link">
+            <a routerLink="/landlord/update-profile" (click)="removeUserMenu()" class="grouping-m">
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 172 172"
                 style=" fill:#000000;">
                 <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -155,19 +147,22 @@
           <div class="grouping-menu"
             style="margin-top: 30px; padding-bottom: 18px; border-bottom: 1px solid #EBEBEB !important;">
             <span class="smaller titl">Hosting</span>
-            <a class="grouping-m under-host animation-link menu-link">
-              <img src="https://img.icons8.com/cute-clipart/64/000000/accessibility2.png" width="20" height="20">
+            <a class="grouping-m under-host" (click)="removeUserMenu()">
+              <img src="https://img.icons8.com/cute-clipart/64/000000/accessibility2.png" width="20" height="20" style="height: 20px !important;">
               <span>Upload an apartment</span>
             </a>
-            <a  class="grouping-m under-host animation-link menu-link">
-              <img src="https://img.icons8.com/doodle/48/000000/company--v1.png" width="20" height="20"> <span>View your apartment(s)</span>
+            <a  class="grouping-m under-host" (click)="removeUserMenu()">
+              <img src="https://img.icons8.com/doodle/48/000000/company--v1.png" width="20" height="20" style="height: 20px !important;"> <span>View your apartment(s)</span>
             </a>
-            <a class="grouping-m under-host animation-link menu-link">
-              <img src="https://img.icons8.com/dusk/64/000000/3-star-hotel.png" width="20" height="20"> <span>Edit apartments</span>
+            <a class="grouping-m under-host" (click)="removeUserMenu()">
+              <img src="https://img.icons8.com/dusk/64/000000/3-star-hotel.png" width="20" height="20" style="height: 20px !important;"> <span>Edit apartments</span>
             </a>
           </div>
         </div>
-
+        <div class="grouping-menu"
+             style="margin-top: 30px; padding-bottom: 18px;">
+          <app-auth-button [user]="user"></app-auth-button>
+        </div>
       </div>
     </div>
   </div>

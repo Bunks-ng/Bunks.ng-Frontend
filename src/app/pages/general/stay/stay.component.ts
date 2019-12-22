@@ -20,6 +20,7 @@ export class StayComponent implements OnInit {
     './assets/js/jquery/jquery.easing.min.js',
     './assets/js/ext/plugins.js',
     './assets/js/ext/scripts.js',
+    './assets/js/ext/select.js',
     './assets/js/ext/multiform.js',
     '/assets/js/ext/progress.js'
   ];

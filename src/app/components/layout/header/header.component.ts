@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { firebase } from 'firebaseui-angular';
+import {MenuService} from '../../../services/menu.service';
 
 @Component({
   selector: 'app-header',
@@ -23,10 +24,26 @@ export class HeaderComponent implements OnInit {
   public email: string;
   public photoURL: string;
 
-  constructor() { }
+  constructor(private menuService: MenuService) { }
 
   ngOnInit() {
     this.getUser();
+  }
+
+  removeMenu() {
+    this.menuService.removeMenu();
+  }
+
+  removeUserMenu() {
+    this.menuService.removeUserMenu();
+  }
+
+  toggleMenu() {
+    this.menuService.controlMenu();
+  }
+
+  toggleUserMenu() {
+    this.menuService.controlUserMenu();
   }
 
   setUser(user?) {

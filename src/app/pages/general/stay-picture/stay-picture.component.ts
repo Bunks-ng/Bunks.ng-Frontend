@@ -26,10 +26,10 @@ export class StayPictureComponent implements OnInit {
     '/assets/js/ext/progress.js'
   ];
 
-  public navigateToSection(section: string) {
-    window.location.hash = '';
-    window.location.hash = section;
-  }
+  // public navigateToSection(section: string) {
+  //   window.location.hash = '';
+  //   window.location.hash = section;
+  // }
 
   ngOnInit() {
   }

@@ -8,14 +8,12 @@
 	@font-face {
 	  font-family: "pompadour";
 	  font-weight: 400;
-	  font-style: bold;
 	  src: url("fonts/03_APompadourBoldSample.otf");
 	}
 
 	@font-face {
 	  font-family: "pompadour-light";
 	  font-weight: 400;
-	  font-style: bold;
 	  src: url("fonts/02_APompadourTextSample.ttf");
 	}
 
@@ -304,10 +302,6 @@
 	  position: static !important;
 	}
 
-	#cliont {}
-
-	#team-colo {}
-
 	#team-colo:hover,
 	#team-colo h3:hover {
 	  background-color: rgba(12, 12, 12, 0.7);
@@ -345,8 +339,7 @@
 	  line-height: 30px !important;
 	  letter-spacing: normal !important;
 	  font-family: poppinsr;
-	  color:
-	    rgb(72, 72, 72) !important;
+	  color: rgb(72, 72, 72) !important;
 	  padding-top: 2px !important;
 	  padding-bottom: 2px !important;
 	}
@@ -362,7 +355,6 @@
 	}
 
 	#imgg {
-	  background: url("../img/blank3.jpg") no-repeat top;
 	  background-size: cover;
 	}
 
@@ -386,58 +378,6 @@
 	  border-radius: 7px;
 	}
 
-	.parents {}
-
-	.parents:hover .student,
-	.parents:focus .student {
-	  transform: scale(0.99);
-	}
-
-	.parents:hover .worker,
-	.parents:focus .worker {
-	  transform: scale(0.99);
-	}
-
-	.student {
-	  background: url("../img/dorms.jpg") no-repeat;
-	  background-size: cover;
-	  display: flex;
-	  transition: all .5s;
-	}
-
-	.student::before {
-	  content: "";
-	  display: none;
-	  height: 100%;
-	  width: 100%;
-	  position: absolute;
-	  top: 0;
-	  left: 0;
-	  border-radius: 7px;
-	  transition: all .5s;
-	}
-
-	.parents:hover .student:before,
-	.parents:focus .student:before {
-	  display: block;
-	  background-color: rgba(0, 0, 0, 0.4);
-	  content: "Coming Soon";
-	  place-content: unset;
-	  color: #fff;
-	  font-size: 20px;
-	  /* padding: 10px; */
-	  /* padding-left: 12px;  */
-	  font-family: poppinsr;
-	  border-radius: 7px;
-	}
-
-	.worker {
-	  background: url("../img/shared3.jpg") no-repeat;
-	  background-size: cover;
-	  display: flex;
-	  transition: all .5s;
-	}
-
 	._1tl9w5x {
 	  -webkit-box-direction: normal !important;
 	  -webkit-box-orient: vertical !important;
@@ -446,9 +386,6 @@
 	  margin-left: -24px !important;
 	  margin-right: -24px !important;
 	}
-
-
-
 
 	#tain {
 	  margin-top: 40px;
@@ -666,7 +603,6 @@
 	}
 
 	._7qp4lh {
-	  border-bottom-width: var(--border-rule-border-width, 1px) !important;
 	  border-bottom-color: #EBEBEB !important;
 	}
 
@@ -683,7 +619,6 @@
 
 	._so3dpm2 {
 	  overflow-wrap: break-word !important;
-	  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
 	  font-size: 12px !important;
 	  font-weight: 600 !important;
 	  line-height: 1.33333em !important;
@@ -788,9 +723,7 @@
 	  margin: 0px !important;
 	}
 
-
-
-	#space-det {
+	.space-det {
 	  overflow-wrap: break-word !important;
 	  font-family: poppinsr;
 	  font-size: 16px !important;
@@ -1662,7 +1595,7 @@
 	  align-items: flex-end;
 	}
 
-	#cs {
+	.cs {
 	  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15) !important;
 	  border-bottom-left-radius: 12px !important;
 	  border-bottom-right-radius: 12px !important;
@@ -3311,11 +3244,11 @@
 	#menu-overlayt::-webkit-scrollbar {
 		width: 0em;
 	  }
-  
+
 	  #menu-overlayt::-webkit-scrollbar-track {
 		background: #f7f7f7;
 	  }
-  
+
 	  #menu-overlayt::-webkit-scrollbar-thumb {
 		background-color: #666;
 		border-radius: 10px;
@@ -8816,15 +8749,15 @@
 	  display: none;
 	}
 
-	#res-spot {
-	  display: flex;
-	  padding: 20px;
-	  position: sticky;
-	  margin-top: -5px;
-	  top: 5vh;
-	  right: 10vw;
-	  float: right;
-	  z-index: 2000;
+	.res-spott {
+	  display: flex !important;
+	  padding: 20px !important;
+	  position: sticky !important;
+	  margin-top: -5px !important;
+	  top: 5vh !important;
+	  right: 10vw !important;
+	  float: right !important;
+	  z-index: 2000 !important;
 	}
 
 
@@ -8851,7 +8784,7 @@
 	    width: 100% !important;
 	  }
 
-	  #res-spot {
+	  .res-spott {
 	    display: none !important;
 	  }
 

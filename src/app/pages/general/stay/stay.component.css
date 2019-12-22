@@ -177,7 +177,7 @@ body {
 }
 
 .drops {
-  background: #fff;
+  background: transparent !important;
   position: absolute;
   right: 22px;
   top: 52.5%;
@@ -185,6 +185,11 @@ body {
   justify-content: left;
   align-items: center;
   width: 14%;
+}
+
+.drops img {
+  width: 15px !important;
+  height: 15px !important;
 }
 
 .types_select {
@@ -197,6 +202,7 @@ body {
   font-family: Poppinsr;
   color: #2C3E50;
   font-size: 13px;
+  background: #ffffff !important;
 }
 
 /*headings*/

@@ -1,3 +1,32 @@
+.flex-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.boxs {
+  width: 350px;
+  padding: 1px 40px 8px 10px;
+  border-radius: 25px;
+  border: 1px solid rgb(228, 228, 228) !important;
+}
+
+.text h2 {
+  color: #212121;
+  font-size: 1.3em;
+  letter-spacing: .01em;
+}
+
+.imagee img {
+  width: 70px;
+  height: auto;
+  border-radius: 50px;
+}
+
+.call img {
+  width: 27px;
+}
+
 .sub-pic {
   flex-grow: 1;
 }

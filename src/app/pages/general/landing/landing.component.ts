@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {AppService} from '../../../services/app.service';
-import { scrollTop } from 'src/app/utils/scroll-to-top';
+import {scrollTop} from 'src/app/utils/scroll-to-top';
 
 @Component({
   selector: 'app-landing',
@@ -26,8 +26,9 @@ export class LandingComponent implements OnInit {
   //   './assets/js/ext/wp-embed.min.js',
   // ];
 
-    scripts = [
-    './assets/js/jquery/jquery.js',
+  scripts = [
+    './assets/js/jquery/jquery.min.js',
+    './assets/js/ext/select.js',
     './assets/js/ext/plugins.js',
     './assets/js/ext/scripts.js',
   ];

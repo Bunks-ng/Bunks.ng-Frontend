@@ -2,7 +2,7 @@
   <div id="heroo" class="hidden hero-small" style="margin-top: -20px;">
     <div id="hero-styles" class=" parallax-hero separate-bunks">
 
-      <div class="hero-image" style="background-image:url(./assets/img/blanket24.jpg)">
+      <div class="hero-image" style="background-image:url('../../../../assets/img/blanket24.jpg')">
         <div class="overlay" style="background-color:rgba(255, 255, 255, 0)">
           <!-- Slide Caption -->
           <div class="clapat-caption animated ">
@@ -17,15 +17,18 @@
         <div class="dig"><span id="intro-textt" style="">Discover your<br class="breaknext"> perfect rental</span></div>
         <div class="coversearch">
           <form id="dig">
-            <select name="spaces" id="spaces">
-              <option value="Shared Apartments">Shared Apartments</option>
-              <option value="Hostels">Hostels</option>
-            </select>
+            <div class="center">
+              <select name="sources" id="sources" class="custom-select sources" placeholder="Apartment Type">
+                <option value="entire_place">Entire apartment</option>
+                <option value="shared_place">Shared apartment</option>
+                <option value="hostel_place">Hostel</option>
+              </select>
+            </div>
             <input type="search" name="locationspace" id="locationspace" placeholder="Where do you want to live?">
           </form>
         </div>
         <a href="#main-content" class="btn btn-split text-uppercase ld_button_5dbb7ed5b10cd lqd-unit-animation-done"
-          style="opacity: 1;">
+           style="opacity: 1;">
           <span>
             <span class="btn-split-bg"></span>
             <span class="btn-txt" style="font-family: poppinsr">Search</span>
@@ -84,10 +87,11 @@
           </div>
         </div>
       </div>
-    </div><br><br>
+    </div>
+    <br><br>
 
     <div class="vc_row wpb_row vc_row-fluid vc_custom_1454539270169 vc_row-has-fill"
-      style="padding: 0 !important; margin: 0 !important;">
+         style="padding: 0 !important; margin: 0 !important;">
       <div class="container">
         <div class="wpb_column vc_column_container vc_col-sm-12">
           <div class="vc_column-inner" style="padding: 0;">
@@ -98,7 +102,8 @@
                 </div>
                 <div class="wpb_text_column wpb_content_element ">
                   <div class="">
-                    <p class="smaller" id="smaller-pompadour">View affordable stays and activities closeby. Subscribe to our services.</p>
+                    <p class="smaller" id="smaller-pompadour">View affordable stays and activities closeby. Subscribe to
+                      our services.</p>
                   </div>
                 </div>
               </div>
@@ -119,9 +124,9 @@
                     <div class="wpb_wrapper ">
                       <div class=" wpb_wrapper">
                         <img src="./assets/img/stayss.jpg" class="card-img-top" alt="..."
-                          style="border-top-left-radius: 8px; border-top-right-radius: 
+                             style="border-top-left-radius: 8px; border-top-right-radius:
                                                             8px; width: inherit !important; box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15) !important;">
-                        <div class="card-body" id="cs">
+                        <div class="card-body" class="cs">
                           <h2 class="card-title u" style="text-align: left !important;"><span style="">Stays</span></h2>
 
                         </div>
@@ -131,31 +136,30 @@
                 </li>
 
                 <li class="df ">
-                    <div class="vc_column-inner ">
-                      <div class="wpb_wrapper">
-                        <div class=" wpb_wrapper">
-                          <img src="./assets/img/subscriptions.jpg" class="card-img-top" alt="..."
-                            style="border-top-left-radius: 8px; border-top-right-radius: 
+                  <div class="vc_column-inner ">
+                    <div class="wpb_wrapper">
+                      <div class=" wpb_wrapper">
+                        <img src="./assets/img/subscriptions.jpg" class="card-img-top" alt="..."
+                             style="border-top-left-radius: 8px; border-top-right-radius:
                                                                     8px; width: inherit !important; box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15) !important;">
-                          <div class="card-body" id="cs">
-                            <h2 class="card-title u" style="text-align: left !important;"><span
-                                style="">Subscriptions</span></h2>
-                          </div>
+                        <div class="card-body" class="cs">
+                          <h2 class="card-title u" style="text-align: left !important;"><span
+                            style="">Subscriptions</span></h2>
                         </div>
                       </div>
                     </div>
-                  </li>
-
+                  </div>
+                </li>
                 <li class="df subs">
                   <div class="vc_column-inner ">
                     <div routerLink="'/experiences'" class="wpb_wrapper feature">
                       <div class=" wpb_wrapper">
                         <img src="./assets/img/experience.jpg" class="card-img-top" alt="..."
-                          style="border-top-left-radius: 8px; border-top-right-radius: 
+                             style="border-top-left-radius: 8px; border-top-right-radius:
                                                                 8px; width: inherit !important; box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15) !important;">
-                        <div class="card-body" id="cs">
+                        <div class="card-body" class="cs">
                           <h2 class="card-title u" style="text-align: left !important;"><span
-                              style="">Experience</span></h2>
+                            style="">Experience</span></h2>
                         </div>
                       </div>
                     </div>
@@ -167,9 +171,9 @@
                     <div class="wpb_wrapper ">
                       <div class=" wpb_wrapper">
                         <img src="./assets/img/beefexperience.jpg" class="card-img-top" alt="..."
-                          style="border-top-left-radius: 8px; border-top-right-radius: 
+                             style="border-top-left-radius: 8px; border-top-right-radius:
                                                                     8px; width: inherit !important; box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15) !important;">
-                        <div class="card-body" id="cs">
+                        <div class="card-body" class="cs">
                           <h2 class="card-title u" style="text-align: left !important;"><span style="">Hostels</span>
                           </h2>
 
@@ -188,7 +192,7 @@
     </div>
 
     <div class="vc_row wpb_row vc_row-fluid vc_custom_1454539270169 vc_row-has-fill"
-      style="margin-top: 30px !important;">
+         style="margin-top: 30px !important;">
       <div class="container">
         <div class="wpb_column vc_column_container vc_col-sm-12">
           <div class="vc_column-inner ">
@@ -206,7 +210,8 @@
           </div>
         </div>
       </div>
-    </div><br>
+    </div>
+    <br>
 
     <div class="vc_row wpb_row vc_row-fluid wow fadeInUp" id="clients">
       <div class="container" style="margin-top: -30px; ">
@@ -214,7 +219,7 @@
           <div class="vc_column-inner ">
             <div class="wpb_wrapper">
               <div class="owl-carousel clients-carousel"
-                style="display: flex; justify-content: space-between; flex-wrap: wrap; padding: 0; margin: 0;">
+                   style="display: flex; justify-content: space-between; flex-wrap: wrap; padding: 0; margin: 0;">
                 <div class="mai">
                   <div class="foodsexp" style="flex-grow: 1"><span style="opacity: 0;">Imagess</span></div>
                   <span class="eim" style="flex-grow: 2;">Food &amp; Drink</span>
@@ -230,7 +235,8 @@
 
                 <div class="mai" style="border-radius: 50px !important; opacity: 0;  margin-left: 20px !important;">
                   <div class="eim" style="flex-grow: 0"><i style="font-size: 24px !important;"
-                      class="fa fa-angle-right"></i> <span style="opacity: 0;">Imagess</span></div>
+                                                           class="fa fa-angle-right"></i> <span style="opacity: 0;">Imagess</span>
+                  </div>
                   <span class="eim" style="flex-grow: 2; opacity: 0;">Sports</span>
                 </div>
 
@@ -249,25 +255,25 @@
           <div class="vc_column-inner ">
             <div class="wpb_wrapper">
               <ul class="team-images">
-                <li style="background-image: url(./assets/img/center-table-comfortable-contemporary-2499970.jpg);">
+                <li style="background-image: url('../../../../assets/img/center-table-comfortable-contemporary-2499970.jpg');">
                 </li>
-                <li style="background-image: url(./assets/img/apps-blur-button-close-up-267350.jpg);"></li>
-                <li style="background-image: url(./assets/img/art-bright-bulbs-close-up-1146562.jpg);">
+                <li style="background-image: url('../../../../assets/img/apps-blur-button-close-up-267350.jpg');"></li>
+                <li style="background-image: url('../../../../assets/img/art-bright-bulbs-close-up-1146562.jpg');">
                 </li>
-                <li style="background-image: url(./assets/img/baskets-clean-color-cotton-271711.jpg);">
+                <li style="background-image: url('../../../../assets/img/baskets-clean-color-cotton-271711.jpg');">
                 </li>
-                <li style="background-image: url(./assets/img/equipment-pavement-security-security-camera-430208.jpg);">
+                <li style="background-image: url('../../../../assets/img/equipment-pavement-security-security-camera-430208.jpg');">
                 </li>
-                <li style="background-image: url(./assets/img/apartment-architecture-artist-447592.jpg);">
+                <li style="background-image: url('../../../../assets/img/apartment-architecture-artist-447592.jpg');">
                 </li>
               </ul>
               <div class="team-carousel">
-                <div class="team-member-carousel" id="team-colo">
+                <div class="team-member-carousel" class="team-colo">
                   <div class="outer">
                     <div class="inner">
                       <div class="team-info" style="">
                         <h3 class="title-has-line"
-                          style="text-transform: uppercase; color: #ffffff; background: rgba(0, 0, 0, 0.35)">
+                            style="text-transform: uppercase; color: #ffffff; background: rgba(0, 0, 0, 0.35)">
                           Browse beautiful places to stay with all the comforts of
                           home, plus more</h3>
                         <p class="smaller" style=""></p>
@@ -276,58 +282,58 @@
                     </div>
                   </div>
                 </div>
-                <div class="team-member-carousel" id="team-colo">
+                <div class="team-member-carousel" class="team-colo">
                   <div class="outer">
                     <div class="inner">
                       <div class="team-info">
                         <h3 class="title-has-line"
-                          style="text-transform: uppercase; color: #ffffff; background: rgba(0, 0, 0, 0.35)">
+                            style="text-transform: uppercase; color: #ffffff; background: rgba(0, 0, 0, 0.35)">
                           Enjoy unlimited access to the internet at very affordable prices! </h3>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="team-member-carousel" id="team-colo">
+                <div class="team-member-carousel" class="team-colo">
                   <div class="outer">
                     <div class="inner">
                       <div class="team-info">
                         <h3 class="title-has-line"
-                          style="text-transform: uppercase; color: #ffffff; background: rgba(0, 0, 0, 0.35)">
+                            style="text-transform: uppercase; color: #ffffff; background: rgba(0, 0, 0, 0.35)">
                           Enjoy 24 hours power supply </h3>
 
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="team-member-carousel" id="team-colo">
+                <div class="team-member-carousel" class="team-colo">
                   <div class="outer">
                     <div class="inner">
                       <div class="team-info">
                         <h3 class="title-has-line"
-                          style="text-transform: uppercase; color: #ffffff; background: rgba(0, 0, 0, 0.35)">
+                            style="text-transform: uppercase; color: #ffffff; background: rgba(0, 0, 0, 0.35)">
                           Enjoy first-class laundery services at affordable prices</h3>
 
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="team-member-carousel" id="team-colo">
+                <div class="team-member-carousel" class="team-colo">
                   <div class="outer">
                     <div class="inner">
                       <div class="team-info">
                         <h3 class="title-has-line"
-                          style="text-transform: uppercase; color: #ffffff; background: rgba(0, 0, 0, 0.35)">
+                            style="text-transform: uppercase; color: #ffffff; background: rgba(0, 0, 0, 0.35)">
                           Cutting edge security technologies and security personels to watch over the premises</h3>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="team-member-carousel" id="team-colo">
+                <div class="team-member-carousel" class="team-colo">
                   <div class="outer">
                     <div class="inner">
                       <div class="team-info">
                         <h3 class="title-has-line"
-                          style="text-transform: uppercase; color: #ffffff; background: rgba(0, 0, 0, 0.35)">
+                            style="text-transform: uppercase; color: #ffffff; background: rgba(0, 0, 0, 0.35)">
                           Sharing homely comfort, that's what bunks is all about!</h3>
 
                       </div>
@@ -342,6 +348,7 @@
       </div>
     </div>
 
-  </div><br>
+  </div>
+  <br>
   <br>
 </div>
