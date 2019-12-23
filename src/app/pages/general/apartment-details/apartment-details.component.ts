@@ -18,6 +18,7 @@ export class ApartmentDetailsComponent implements OnInit {
     './assets/js/jquery/jquery.js',
     './assets/js/ext/plugins.js',
     './assets/js/ext/scripts.js',
+    './assets/js/ext/modal.js',
   ];
 
   ngOnInit() {

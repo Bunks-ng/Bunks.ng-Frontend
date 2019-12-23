@@ -2639,7 +2639,7 @@
 
 	button.mfp-close,
 	button.mfp-arrow:before {
-	  background: url(css/default-skin/default-skin.png) 0 0 no-repeat;
+	  background: url(default-skin/default-skin.png) 0 0 no-repeat;
 	  background-size: 264px 88px;
 	}
 

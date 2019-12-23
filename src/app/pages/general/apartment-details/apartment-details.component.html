@@ -3,13 +3,15 @@
     <!-- Container -->
     <div class="vc_row wpb_row vc_row-fluid vc_custom_1467336115996 vc_row-has-fill not-mobile"
          style="margin-bottom: 10px; margin-right: -19px !important">
-      <div class="container" style="padding: 0 !important;">
+      <div class="container mfp-gallery" style="padding: 0 !important;">
         <div class="wpb_column vc_column_container vc_col-sm-6" style="padding: 0 !important;">
           <div class="vc_column-inner" style="padding: 0 !important;">
             <div class="wpb_wrapper">
-              <div style="border: 3px solid rgb(72,72,72);" class="hover-zoom">
-                <img src="./assets/img/white-concrete-high-rise-building-2119714-min.jpg" alt=""/>
-              </div>
+              <a class="mf-zoom" href="./assets/img/white-concrete-high-rise-building-2119714-min.jpg">
+                <div style="border: 3px solid rgb(72,72,72);" class="hover-zoom">
+                  <img src="./assets/img/white-concrete-high-rise-building-2119714-min.jpg" alt=""/>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -21,9 +23,11 @@
               </div>
             </div>
             <div class="wpb_wrapper">
-              <div style="border: 3px solid rgb(72,72,72); border-left: 0; border-top: 0" class="hover-zoom">
-                <img src="./assets/img/apartment-bathroom-bathtub-2134224.jpg" alt=""/>
-              </div>
+              <a class="mf-zoom" href="./assets/img/apartment-bathroom-bathtub-2134224.jpg">
+                <div style="border: 3px solid rgb(72,72,72); border-left: 0; border-top: 0" class="hover-zoom">
+                  <img src="./assets/img/apartment-bathroom-bathtub-2134224.jpg" alt=""/>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -35,9 +39,11 @@
               </div>
             </div>
             <div class="wpb_wrapper">
-              <div style="border: 3px solid rgb(72,72,72); border-left: 0; border-top: 0;" class="hover-zoom">
-                <img src="./assets/img/apa2.jpg" alt=""/>
-              </div>
+              <a class="mf-zoom" href="./assets/img/apa2.jpg">
+                <div style="border: 3px solid rgb(72,72,72); border-left: 0; border-top: 0;" class="hover-zoom">
+                  <img src="./assets/img/apa2.jpg" alt=""/>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -50,10 +56,29 @@
         <div class="wpb_column vc_column_container vc_col-sm-12" style="padding: 0 !important;">
           <div class="vc_column-inner" style="padding: 0 !important;">
             <div class="wpb_wrapper">
-              <div class="classic-slider flexslider" style="z-index: 4000">
+              <div class="classic-slider flexslider mfp-gallery" style="z-index: 4000">
+                <ul>
+                  <li>
+                    <a _ngcontent-nkw-c5="" class="mf-zoom" href="./assets/img/apa2.jpg" style="
+    position: absolute;
+    padding: 10px 30px;
+    background: #0d0c0c;
+    bottom: 20px;
+    right: 10px;
+    color: #fff;
+    font-family: poppinsr;
+    z-index: 9000;
+">View all</a>
+                    <a href="./assets/img/apa3.jpg" class="mf-zoom"></a>
+                  </li>
+                </ul>
                 <ul class="slides">
-                  <li><img src="./assets/img/apa2.jpg" alt=""/></li>
-                  <li><img src="./assets/img/apa3.jpg" alt=""/></li>
+                  <li>
+                    <img src="./assets/img/apa2.jpg" alt=""/>
+                  </li>
+                  <li>
+                    <img src="./assets/img/apa3.jpg" alt=""/>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -61,6 +86,51 @@
         </div>
       </div>
     </div>
+    <div class="mobile-available-container">
+      <div class="mobile-contact-info active">Contact info</div>
+      <div class="mobile-check-availability">Check availability</div>
+    </div>
+    <div class="modal-overlay">
+      <div class="modal" style="z-index: 2000 !important;">
+
+        <a class="close-modal">
+          <svg viewBox="0 0 20 20">
+            <path fill="#000000"
+                  d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"></path>
+          </svg>
+        </a><!-- close modal -->
+
+        <div _ngcontent-igi-c5="" class="modal-content" style="width: 80%;">
+          <form class="guest_form">
+            <label for="no_of_guestss">Number of guest</label>
+            <input type="number" placeholder="Number of guests" id="no_of_guestss" class="guest_input">
+            <button class="clapat-button big_font">Check availability</button>
+          </form>
+        </div><!-- mobile-guest-form-content -->
+      </div><!-- modal -->
+    </div><!-- mobile-guest-overlay -->
+    <div class="modal-overlay-contact">
+      <div class="modal-contact" style="z-index: 2000 !important;">
+        <a class="close-modal-contact">
+          <svg viewBox="0 0 20 20">
+            <path fill="#000000"
+                  d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"></path>
+          </svg>
+        </a><!-- close modal -->
+
+        <div _ngcontent-igi-c5="" class="modal-content-contact" style="width: 80%;">
+          <form class="guest_form">
+            <div class="parent flex-center">
+              <div class="boxs flex-card">
+                <div class="imagee"><img src="./assets/img/Group 19.png" style="position:relative;top: 7px"></div>
+                <div class="text"><h2>Mark Esyon</h2></div>
+                <div class="call"><img src="https://img.icons8.com/cute-clipart/64/000000/phone.png"></div>
+              </div>
+            </div>
+          </form>
+        </div><!-- mobile-guest-form-content -->
+      </div><!-- modal -->
+    </div><!-- mobile-guest-overlay -->
     <div style="background: red; position: sticky; top: 2vh;">
       <div style="position:relative; background: red">
         <div class="vc_col-sm-4 res-spott">
@@ -175,7 +245,8 @@
             </div>
           </div>
         </div>
-        <div class="vc_col-sm-4 res-spott" style="position: absolute !important; right: 8.5vw !important;top: 275px !important;">
+        <div class="vc_col-sm-4 res-spott"
+             style="position: absolute !important; right: 8.5vw !important;top: 275px !important;">
           <div class="parent flex-center">
             <div class="boxs flex-card">
               <div class="imagee"><img src="./assets/img/Group 19.png" style="position:relative;top: 7px"></div>

@@ -10,6 +10,7 @@
   padding: 0;
   position: absolute;
   top: 15%;
+  width: 100% !important;
 }
 
 .more-details {
