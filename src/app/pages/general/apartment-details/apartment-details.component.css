@@ -12,6 +12,17 @@
   align-items: center;
 }
 
+.mf-styles {
+  position: absolute;
+  padding: 10px 30px;
+  background: #0d0c0c;
+  bottom: 20px;
+  right: 10px;
+  color: #fff;
+  font-family: poppinsr;
+  z-index: 9000;
+}
+
 .big_font {
   font-family: poppinssb;
   font-size: 14px !important;
@@ -396,7 +407,7 @@
       background: #343434;
       width: 87%;
       z-index: 1000;
-      padding: 7px;
+      padding: 11px;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       display: none;
