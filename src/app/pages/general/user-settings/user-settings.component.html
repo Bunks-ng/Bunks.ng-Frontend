@@ -11,13 +11,22 @@
           <div class="vc_column-inner stubb">
             <div class="wpb_wrapper">
               <h3 class="">Update Profile</h3>
+              <p>{{ profileUpdateMessage }}</p>
               <div class="wpb_text_column wpb_content_element ">
                 <div class="wpb_wrapper">
                   <form action="" class="update-p">
-                    <input type="text" class="input-field" placeholder="FirstName">
-                    <input type="text" class="input-field" placeholder="LastName">
-                    <input type="text" class="input-field" placeholder="Username">
-                    <input type="submit" value="Update" class="input-submit">
+                    <input type="text" [value]="firstName" [(ngModel)]="firstName" [ngModelOptions]="{standalone: true}" class="input-field" placeholder="FirstName" required>
+                    <input type="text" [value]="lastName" [(ngModel)]="lastName" [ngModelOptions]="{standalone: true}" class="input-field" placeholder="LastName" required>
+                    <input type="submit" value="Update names" (click)="updateProfile($event)" class="input-submit">
+                  </form>
+                </div>
+              </div>
+              <p>{{ emailUpdateMessage }}</p>
+              <div class="wpb_text_column wpb_content_element ">
+                <div class="wpb_wrapper">
+                  <form action="" class="update-p">
+                    <input type="text" [value]="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" class="input-field" placeholder="Email address" required>
+                    <input type="submit" value="Update email" (click)="updateEmail($event)" class="input-submit">
                   </form>
                 </div>
               </div>
@@ -27,9 +36,9 @@
               <div class="wpb_text_column wpb_content_element ">
                 <div class="wpb_wrapper">
                   <form action="" class="update-password">
-                    <input type="text" class="input-field" placeholder="Current Password">
-                    <input type="text" class="input-field" placeholder="New Password">
-                    <input type="text" class="input-field" placeholder="Confirm Password">
+                    <input type="text" class="input-field" placeholder="Current Password" required>
+                    <input type="text" class="input-field" placeholder="New Password" required>
+                    <input type="text" class="input-field" placeholder="Confirm Password" required>
                     <input type="submit" value="Change" class="input-submit">
                   </form>
                 </div>
