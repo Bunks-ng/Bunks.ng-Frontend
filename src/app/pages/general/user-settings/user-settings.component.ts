@@ -12,12 +12,12 @@ import { scrollTop } from 'src/app/utils/scroll-to-top';
 })
 export class UserSettingsComponent implements OnInit {
 
-  private user: firebase.User;
-  private firstName: string = '';
-  private lastName: string = '';
-  private email: string = '';
-  private profileUpdateMessage: string = '';
-  private emailUpdateMessage: string = '';
+  public user: firebase.User;
+  public firstName: string = '';
+  public lastName: string = '';
+  public email: string = '';
+  public profileUpdateMessage: string = '';
+  public emailUpdateMessage: string = '';
 
   constructor(private appService: AppService, private router: Router) { 
     this.appService.loadScriptPage(this.scripts);
