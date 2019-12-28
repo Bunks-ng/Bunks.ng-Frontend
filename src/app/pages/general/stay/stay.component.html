@@ -3,9 +3,9 @@
     <form id="msform">
       <!-- progressbar -->
       <ul id="progressbar">
-        <li class="active">Apartment Types</li>
-        <li>Apartment agreements</li>
-        <li>Apartment Details</li>
+        <li class="active">Apartment Details</li>
+        <li>Apartment Size</li>
+        <li>Final Phase</li>
       </ul>
       <!-- fieldsets -->
       <fieldset class="arrange">
@@ -17,7 +17,7 @@
             <div class="drops"><img src="https://img.icons8.com/ios/26/000000/expand-arrow--v2.png" height="15"
                                     width="15"></div>
             <label for="apartment_types" style="color: dimgray; line-height: 30px;">Apartment types</label>
-            <select name="apartment_types" class="types_select" id="apartment_types">
+            <select name="apartment_types" [(ngModel)]="spaceToUpload.type" class="types_select" id="apartment_types">
               <option value="entire_apartment"><span>Entire apartment</span></option>
               <option value="shared_apartment"><span>Shared apartment</span></option>
               <option value="hostel_space">Hostel</option>
@@ -27,7 +27,7 @@
             <div class="drops"><img src="https://img.icons8.com/ios/26/000000/expand-arrow--v2.png" height="15"
                                     width="15"></div>
             <label for="person_capacity" style="color: dimgray; line-height: 30px;">Persons capacity</label>
-            <select name="person_capacity" id="person_capacity" class="types_select">
+            <select name="person_capacity" [(ngModel)]="spaceToUpload.capacity" id="person_capacity" class="types_select">
               <option value="1">for 1 guest</option>
               <option value="2">for 2 guests</option>
               <option value="3">for 3 guests</option>
@@ -48,73 +48,22 @@
           </div>
         </div>
         <label for="location_space" style="color: dimgray; line-height: 30px;">Space location</label>
-        <input type="text" name="fname" id="location_space" placeholder="Enter a location"/>
+        <input type="text" name="fname" [(ngModel)]="spaceToUpload.location" id="location_space" placeholder="Enter a location"/>
         <input type="button" name="next" class="next action-button mafo" value="Next"/>
       </fieldset>
       <fieldset class="arrange">
-        <h2 class="fs-title">What will guests have?</h2>
         <span class="steps">STEP 2</span>
-        <h3 class="fs-subtitle">Let's narrow things down</h3>
-        <div class="options">
-          <label for="entire_place">
-            <div style="display: flex; flex-direction:column;">
-              <span class="places_put">Entire place</span>
-              <span class="places_mini">Guests have the whole place to themselves. This usually includes a bedroom, a bathroom, and a kitchen.</span>
-            </div>
-          </label>
-          <input type="radio" id="entire_place" name="twitter" placeholder="Twitter"/>
-        </div>
-        <div class="options other">
-          <label for="shared_room">
-            <div style="display: flex; flex-direction:column;">
-              <span class="places_put">Shared room</span>
-              <span class="places_mini">Guests sleep in a bedroom or a common area that could be shared with others</span>
-            </div>
-          </label>
-          <input type="radio" id="shared_room" name="twitter" placeholder="Twitter"/>
-        </div>
-        <div class="options other">
-          <label for="private_room">
-            <div style="display: flex; flex-direction:column;">
-              <span class="places_put">Private room</span>
-              <span class="places_mini">Guests have their own private room for sleeping. Other areas could be shared.</span>
-            </div>
-          </label>
-          <input type="radio" id="private_room" name="twitter" placeholder="Twitter"/>
-        </div>
-        <span class="steps" id="steps">Is this set up as a dedicated guest space?</span>
-        <div class="options" style="top: -10px !important;">
-          <label for="yes_dedicated">
-            <div style="display: flex; flex-direction:column;">
-              <span class="places_put">Yes, it’s primarily set up for guests</span>
-            </div>
-          </label>
-          <input type="radio" id="yes_dedicated" name="twitter" placeholder="Twitter"/>
-        </div>
-        <div class="options other" style="top: -10px !important;">
-          <label for="no_dedicated">
-            <div style="display: flex; flex-direction:column;">
-              <span class="places_put">No, I keep my personal belongings here</span>
-            </div>
-          </label>
-          <input type="radio" id="no_dedicated" name="twitter" placeholder="Twitter"/>
-        </div>
-
-        <input type="button" name="previous" class="previous action-button-previous other_button" value="Previous"/>
-        <input type="button" name="next" class="next action-button other_button" value="Next"/>
-      </fieldset>
-      <fieldset class="arrange">
         <h2 class="fs-title">Rooms to house your guests?</h2>
         <h3 class="fs-subtitle">Fill in the correct number accordingly.</h3>
         <label for="no_of_rooms" style="color: dimgray; line-height: 30px;">Number of rooms</label>
-        <input type="number" id="no_of_rooms" name="no_of_rooms" placeholder="Number of rooms"/>
+        <input type="number" id="no_of_rooms" name="no_of_rooms" [(ngModel)]="spaceToUpload.numberOfRooms" placeholder="Number of rooms"/>
         <label for="no_of_bathrooms" style="color: dimgray; line-height: 30px;">Number of bathrooms</label>
-        <input type="number" id="no_of_bathrooms" name="no_of_bathrooms" placeholder="Number of bathrooms"/>
+        <input type="number" id="no_of_bathrooms" name="no_of_bathrooms" [(ngModel)]="spaceToUpload.numberOfBathrooms" placeholder="Number of bathrooms"/>
         <input type="button" name="previous" class="previous action-button-previous other_button" value="Previous"/>
-        <input type="button" name="next" class="next action-button other_button" value="Next"/>
+        <input type="button" name="next" class="next action-button other_button" value="Next" (click)="saveSpace()"/>
       </fieldset>
       <fieldset class="arrange">
-        <h2 class="fs-title">Great progress, Malik!</h2>
+        <h2 class="fs-title">Great progress, {{ firstName }}!</h2>
         <span class="steps">Continue to final phase</span>
         <h3 class="fs-subtitle">Photos, short description, title.</h3>
         <input type="button" name="previous" class="previous action-button-previous mafoo" value="Previous"/>

@@ -29,7 +29,7 @@
                     <div id='result'></div>
                   </div>
                 </label>
-                <input id='files' type='file' multiple style="display: none;"/>
+                <input id='files' type='file' name="photos" multiple style="display: none;" [(ngModel)]="spaceToUploadContd.photos"/>
                 <!--                <button type='button' id='clear'>Clear</button>-->
 
               </article>
@@ -45,7 +45,7 @@
           with a
           listing title that highlights what makes your place special.</h3>
         <input type="text" id="apartment_name" name="apartment_name" style="font-size: 17px; margin-top: 15px"
-               placeholder="Listing title"/>
+               placeholder="Listing title" [(ngModel)]="spaceToUploadContd.title"/>
         <hr style="position:relative;top: 10px">
         <h2 class="fs-title" style="margin-top: 35px;">Describe your place to guests</h2>
         <h3 class="fs-subtitle subtitle sub">Write a quick summary
@@ -53,7 +53,7 @@
           with guests.</h3>
         <textarea cols="100" rows="50" type="text" id="apartment_summary" name="apartment_name"
                   style="font-size: 17px; margin-top: 15px; height: 100px"
-                  placeholder="Describe the decor, lights, what's nearby etc..."></textarea>
+                  placeholder="Describe the decor, lights, what's nearby etc..." [(ngModel)]="spaceToUploadContd.description"></textarea>
         <input type="button" name="previous" class="previous action-button-previous other_button" value="Previous"/>
         <input type="button" name="next" class="next action-button other_button" value="Almost there!"/>
       </fieldset>
@@ -65,19 +65,20 @@
           <div id="naira">₦</div>
           <input type="text" id="pricing" name="apartment_name"
                  style="font-size: 17px; margin-top: 15px; padding: 15px 40px !important;"
-                 placeholder="Listing title"/>
+                 placeholder="Listing price" [(ngModel)]="spaceToUploadContd.price"/>
         </div>
         <hr style="position:relative;top: 10px">
         <input type="button" name="previous" class="previous action-button-previous other_button" value="Previous"/>
         <input type="button" name="next" class="next action-button other_button" value="Almost there!!"/>
       </fieldset>
       <fieldset class="arrange">
-        <h2 class="fs-title">Welcome Malik!</h2>
+        <h2 class="fs-title">Well done {{ firstName }}!</h2>
         <span class="steps">Your apartment is ready to publish!</span>
         <h3 class="fs-subtitle">You’ll be able to welcome your first guest starting February. If you’d like to
           update your calendar or house rules, you can easily do all that after you hit publish.</h3>
+          <p>{{ statusOfUpload }}</p>
         <input type="button" name="previous" class="previous action-button-previous mafoo" value="Previous"/>
-        <a class="clapat-button algn" style="padding: 20px; text-decoration: none" routerLink="/become-a-host/photos">Finish</a>
+        <button class="clapat-button algn" style="padding: 20px; text-decoration: none" (click)="uploadSpace()">Finish</button>
       </fieldset>
 
     </form>

@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { FirebaseUIModule } from 'firebaseui-angular';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { firebase } from 'firebaseui-angular';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -60,6 +61,7 @@ firebase.initializeApp(environment.firebaseConfig);
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
+    AngularFirestoreModule,
     FirebaseUIModule.forRoot(firebaseUiAuthConfig)
   ],
   providers: [AppService],
